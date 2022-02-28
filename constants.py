@@ -1,0 +1,7 @@
+
+QUEUES = ['Twitter','Facebook','Youtube']
+
+
+
+
+
