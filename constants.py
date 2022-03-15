@@ -1,7 +1,0 @@
-
-QUEUES = ['Twitter','Facebook','Youtube']
-
-
-
-
-

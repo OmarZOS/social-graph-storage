@@ -1,12 +1,18 @@
 // Uncomment if you're cruel enough..
 // DROP SPACE IF EXISTS twitter_graph;
 
-CREATE SPACE IF NOT EXISTS twitter_graph ( vid_type = INT64 );
 
+CREATE SPACE IF NOT EXISTS twitter_graph ( vid_type = INT64 );
 // Enter the created space
 USE twitter_graph;
 
 CREATE TAG IF NOT EXISTS user(id INT64,name string);
+CREATE TAG IF NOT EXISTS coordinates(coordinated string,type string);
+CREATE TAG IF NOT EXISTS place(attributes string,bounding_box string,country string,country_code string,full_name string,id INT64,name string,place_type string,url string);
+CREATE TAG IF NOT EXISTS entities(hashtags string,urls string,user_mentions string,symbols string,media string);
+CREATE TAG IF NOT EXISTS media(id INT64,indices string,expanded_url string,type string);
+CREATE TAG IF NOT EXISTS geo(type string,coordinates string);
+CREATE TAG IF NOT EXISTS tweet(created_at string,id INT64,id_str string,full_text string,entities string);
 
 CREATE EDGE friend();
 
