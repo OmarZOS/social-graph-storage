@@ -1,0 +1,35 @@
+Log file created at: 2022/03/15 00:35:16
+Running on machine: 1a9a196e1b13
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20220315 00:35:16.419770     1 MetaDaemon.cpp:136] localhost = "metad0":9559
+I20220315 00:35:16.422518     1 NebulaStore.cpp:51] Start the raft service...
+I20220315 00:35:16.423035     1 NebulaSnapshotManager.cpp:25] Send snapshot is rate limited to 10485760 for each part by default
+I20220315 00:35:16.423676     1 RaftexService.cpp:63] Init thrift server for raft service, port: 9560
+I20220315 00:35:16.424922    57 RaftexService.cpp:94] Starting the Raftex Service
+I20220315 00:35:16.469343    57 RaftexService.cpp:84] Starting the Raftex Service on 9560
+I20220315 00:35:16.469395    57 RaftexService.cpp:106] Start the Raftex Service successfully
+I20220315 00:35:16.472049     1 NebulaStore.cpp:83] Scan the local path, and init the spaces_
+E20220315 00:35:16.472126     1 FileUtils.cpp:377] Failed to read the directory "/data/meta/nebula" (2): No such file or directory
+I20220315 00:35:16.472447     1 NebulaStore.cpp:169] Init data from partManager for "metad0":9559
+I20220315 00:35:16.472467     1 NebulaStore.cpp:267] Create data space 0
+I20220315 00:35:16.534684     1 RocksEngine.cpp:142] open rocksdb on /data/meta/nebula/0/data
+I20220315 00:35:16.545771     1 NebulaStore.cpp:329] Space 0, part 0 has been added, asLearner 0
+I20220315 00:35:16.545838     1 NebulaStore.cpp:76] Register handler...
+I20220315 00:35:16.545853     1 MetaDaemonInit.cpp:103] Waiting for the leader elected...
+I20220315 00:35:16.545867     1 MetaDaemonInit.cpp:115] Leader has not been elected, sleep 1s
+I20220315 00:35:17.545990     1 MetaDaemonInit.cpp:142] Get meta version is 3
+I20220315 00:35:17.546056     1 MetaDaemonInit.cpp:159] Nebula store init succeeded, clusterId 5515666330599404307
+I20220315 00:35:17.546072     1 MetaDaemon.cpp:149] Start http service
+I20220315 00:35:17.546347     1 MetaDaemonInit.cpp:167] Starting Meta HTTP Service
+I20220315 00:35:17.549613    97 WebService.cpp:123] Web service started on HTTP[19559]
+I20220315 00:35:17.549693     1 JobManager.cpp:72] Not leader, skip reading remaining jobs
+I20220315 00:35:17.549803     1 JobManager.cpp:60] JobManager initialized
+I20220315 00:35:17.549810   103 JobManager.cpp:115] JobManager::runJobBackground() enter
+I20220315 00:35:17.557001     1 MetaDaemon.cpp:214] The meta daemon start on "metad0":9559
+I20220315 00:35:20.077491   111 HBProcessor.cpp:33] Receive heartbeat from "graphd2":9669, role = GRAPH
+I20220315 00:35:20.077570   111 HBProcessor.cpp:86] Update host "graphd2":9669 dir info, root path: /usr/local/nebula, data path size: 0
+I20220315 00:35:20.139389   111 HBProcessor.cpp:33] Receive heartbeat from "graphd":9669, role = GRAPH
+I20220315 00:35:20.139443   111 HBProcessor.cpp:86] Update host "graphd":9669 dir info, root path: /usr/local/nebula, data path size: 0
+I20220315 00:35:28.776540   111 HBProcessor.cpp:33] Receive heartbeat from "storaged0":9779, role = STORAGE
+I20220315 00:35:28.776795   111 HBProcessor.cpp:40] Machine "storaged0":9779 is not registed

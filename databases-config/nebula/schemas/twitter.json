@@ -1,0 +1,68 @@
+{
+    "user": [
+        { "id": "INT64" },
+        { "id_str": "INT64" },
+        { "name": "INT64" },
+        { "screen_name": "INT64" },
+        { "location": "INT64" },
+        { "url": "INT64" },
+        { "description": "INT64" },
+        { "verified": "INT64" },
+        { "followers_count": "INT64" },
+        { "friends_count": "INT64" },
+        { "listed_count": "INT64" },
+        { "favourites_count": "INT64" },
+        { "statuses_count": "INT64" },
+        { "created_at": "INT64" },
+        { "utc_offset": "INT64" },
+        { "time_zone": "INT64" },
+        { "geo_enabled": "INT64" },
+        { "lang": "INT64" },
+        { "contributors_enabled": "INT64" },
+        { "is_translator": "INT64" },
+        { "default_profile": "INT64" },
+        { "following": "INT64" },
+        { "follow_request_sent": "INT64" },
+        { "notifications": "INT64" }
+    ],
+    "coordinates": [
+        { "coordinated": "INT64" },
+        { "type": "INT64" }
+
+    ],
+    "place": [
+        { "attributes": "INT64" },
+        { "bounding_box": "INT64" },
+        { "country": "INT64" },
+        { "country_code": "INT64" },
+        { "full_name": "INT64" },
+        { "id": "INT64" },
+        { "name": "INT64" },
+        { "place_type": "INT64" },
+        { "url": "INT64" }
+    ],
+    "entities": [
+        { "hashtags": "INT64" },
+        { "urls": "INT64" },
+        { "user_mentions": "INT64" },
+        { "symbols": "INT64" },
+        { "media": "INT64" }
+    ],
+    "media": [
+        { "id": "INT64" },
+        { "indices": "INT64" },
+        { "expanded_url": "INT64" },
+        { "type": "INT64" }
+    ],
+    "geo": [
+        { "type": "INT64" },
+        { "coordinates": "INT64" }
+    ],
+    "tweet": [
+        { "created_at": "INT64" },
+        { "id": "INT64" },
+        { "id_str": "INT64" },
+        { "full_text": "INT64" },
+        { "entities": "INT64" }
+    ]
+}

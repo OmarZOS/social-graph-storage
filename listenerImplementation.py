@@ -26,8 +26,13 @@ class rabbitMQ_Implementation(listeningService):
         channel = connection.channel()
         channel.exchange_declare(exchange,exchange_type=ExchangeType.direct)#durable=True,
         
-        for api in QUEUES: # each queue is dynamically started
+        print(hostName)
+        print(user)
+        print(password)
+        
+        for api in QUEUES: # each queue is dynamically declared
             channel.queue_declare(queue=api)
+            channel.queue_bind(queue=api,exchange=exchange,routing_key=api)
         for api in QUEUES: # each queue is dynamically started
             channel.basic_consume(queue=api, on_message_callback=self.universal_receiver(api), auto_ack=True)
         
@@ -37,9 +42,10 @@ class rabbitMQ_Implementation(listeningService):
         return lambda ch, method, properties, body : self.receiveData(api_name,ch, method, properties, body) # das ist kûnst..
     
     def receiveData(self,api_name,ch,method,properties,body):
+        print(json.loads(body.decode()))
         handle_data(api_name,json.loads(body.decode()))
         
         
         
 if __name__=="__main__":
-    listener = rabbitMQ_Implementation("storage")
+    listener = rabbitMQ_Implementation("data")

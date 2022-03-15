@@ -1,0 +1,259 @@
+Log file created at: 2022/03/15 00:35:18
+Running on machine: bb0c999f6d40
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20220315 00:35:18.693042     1 StorageDaemon.cpp:128] localhost = "storaged2":9779
+I20220315 00:35:18.693328     1 StorageDaemon.cpp:143] data path= /data/storage
+I20220315 00:35:18.708577     1 MetaClient.cpp:82] Create meta client to "metad0":9559
+I20220315 00:35:18.708658     1 MetaClient.cpp:83] root path: /usr/local/nebula, data path size: 1
+I20220315 00:35:18.721005    48 ThriftClientManager-inl.h:67] resolve "metad1":9559 as "192.168.80.4":9559
+W20220315 00:35:18.728842     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20220315 00:35:18.729734    54 ThriftClientManager-inl.h:67] resolve "metad1":9559 as "192.168.80.4":9559
+E20220315 00:35:18.730793     1 MetaClient.cpp:100] Heartbeat failed, status:Machine not existed!
+I20220315 00:35:18.730994     1 MetaClient.cpp:131] Waiting for the metad to be ready!
+W20220315 00:35:28.731140     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20220315 00:35:28.732879    55 ThriftClientManager-inl.h:67] resolve "metad1":9559 as "192.168.80.4":9559
+E20220315 00:35:28.735116     1 MetaClient.cpp:100] Heartbeat failed, status:Machine not existed!
+I20220315 00:35:28.735240     1 MetaClient.cpp:131] Waiting for the metad to be ready!
+W20220315 00:35:38.735513     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20220315 00:35:38.737826    56 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "192.168.80.2":9559
+I20220315 00:35:38.741219    56 MetaClient.cpp:2493] Persist the cluster Id from metad 5515666330599404307
+I20220315 00:35:38.741384    56 FileBasedClusterIdMan.cpp:21] Remove the existed file cluster.id
+I20220315 00:35:38.741631    56 FileBasedClusterIdMan.cpp:34] Persist clusterId 5515666330599404307 succeeded!
+I20220315 00:35:38.743572    57 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "192.168.80.2":9559
+I20220315 00:35:38.747196    58 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "192.168.80.2":9559
+I20220315 00:35:38.750553    59 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "192.168.80.2":9559
+I20220315 00:35:38.753623    60 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "192.168.80.2":9559
+I20220315 00:35:38.758150    61 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "192.168.80.2":9559
+I20220315 00:35:38.762531    62 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "192.168.80.2":9559
+I20220315 00:35:38.766363    63 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "192.168.80.2":9559
+I20220315 00:35:38.768790     1 MetaClient.cpp:3046] Load leader of "storaged1":9779 in 0 space
+I20220315 00:35:38.768929     1 MetaClient.cpp:3046] Load leader of "storaged2":9779 in 0 space
+I20220315 00:35:38.768991     1 MetaClient.cpp:3046] Load leader of "storaged0":9779 in 0 space
+I20220315 00:35:38.769047     1 MetaClient.cpp:3052] Load leader ok
+I20220315 00:35:38.788825     1 MetaClient.cpp:142] Register time task for heartbeat!
+I20220315 00:35:38.788889     1 StorageServer.cpp:192] Init schema manager
+I20220315 00:35:38.788911     1 StorageServer.cpp:195] Init index manager
+I20220315 00:35:38.788929     1 StorageServer.cpp:198] Init kvstore
+I20220315 00:35:38.788955     1 NebulaStore.cpp:51] Start the raft service...
+I20220315 00:35:38.789467     1 NebulaSnapshotManager.cpp:25] Send snapshot is rate limited to 10485760 for each part by default
+I20220315 00:35:38.789662     1 RaftexService.cpp:63] Init thrift server for raft service, port: 9780
+I20220315 00:35:38.789755    70 RaftexService.cpp:94] Starting the Raftex Service
+I20220315 00:35:38.813519    70 RaftexService.cpp:84] Starting the Raftex Service on 9780
+I20220315 00:35:38.813553    70 RaftexService.cpp:106] Start the Raftex Service successfully
+I20220315 00:35:38.813659     1 NebulaStore.cpp:83] Scan the local path, and init the spaces_
+E20220315 00:35:38.813701     1 FileUtils.cpp:377] Failed to read the directory "/data/storage/nebula" (2): No such file or directory
+I20220315 00:35:38.813736     1 NebulaStore.cpp:169] Init data from partManager for "storaged2":9779
+I20220315 00:35:38.813760     1 NebulaStore.cpp:76] Register handler...
+I20220315 00:35:38.813776     1 StorageServer.cpp:201] Init LogMonitor
+I20220315 00:35:38.813876     1 StorageServer.cpp:99] Starting Storage HTTP Service
+I20220315 00:35:38.814132     1 StorageServer.cpp:103] Http Thread Pool started
+I20220315 00:35:38.815865    81 WebService.cpp:123] Web service started on HTTP[19779]
+I20220315 00:35:38.815927     1 TransactionManager.cpp:24] TransactionManager ctor()
+I20220315 00:35:38.816215     1 RocksEngineConfig.cpp:366] Emplace rocksdb option max_bytes_for_level_base=268435456
+I20220315 00:35:38.816232     1 RocksEngineConfig.cpp:366] Emplace rocksdb option max_write_buffer_number=4
+I20220315 00:35:38.816242     1 RocksEngineConfig.cpp:366] Emplace rocksdb option write_buffer_size=67108864
+I20220315 00:35:38.816403     1 RocksEngineConfig.cpp:366] Emplace rocksdb option block_size=8192
+I20220315 00:35:38.878903     1 RocksEngine.cpp:142] open rocksdb on /data/storage/nebula/0/data
+I20220315 00:35:38.879173     1 AdminTaskManager.cpp:22] max concurrent subtasks: 10
+I20220315 00:35:38.879493     1 AdminTaskManager.cpp:40] exit AdminTaskManager::init()
+I20220315 00:35:38.879529   105 AdminTaskManager.cpp:241] waiting for incoming task
+I20220315 00:35:38.880941   109 StorageServer.cpp:318] The internal storage service start(same with admin) on "storaged2":9777
+I20220315 00:35:38.881140   108 StorageServer.cpp:293] The admin service start on "storaged2":9778
+I20220315 00:35:38.894174   107 StorageServer.cpp:264] The storage service start on "storaged2":9779
+I20220315 00:35:48.993721    71 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "192.168.80.2":9559
+I20220315 00:35:59.005816    72 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "192.168.80.2":9559
+I20220315 00:36:09.017910    73 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "192.168.80.2":9559
+I20220315 00:36:19.029245    74 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "192.168.80.2":9559
+I20220315 00:36:29.039624    75 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "192.168.80.2":9559
+I20220315 00:36:39.053817    48 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "192.168.80.2":9559
+I20220315 00:36:49.065949    54 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "192.168.80.2":9559
+I20220315 00:36:59.080760    55 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "192.168.80.2":9559
+I20220315 00:38:19.186122    64 MetaClient.cpp:3046] Load leader of "storaged0":9779 in 0 space
+I20220315 00:38:19.186251    64 MetaClient.cpp:3046] Load leader of "storaged1":9779 in 0 space
+I20220315 00:38:19.186288    64 MetaClient.cpp:3046] Load leader of "storaged2":9779 in 0 space
+I20220315 00:38:19.186318    64 MetaClient.cpp:3052] Load leader ok
+I20220315 00:38:19.186604    64 NebulaStore.cpp:267] Create data space 1
+I20220315 00:38:19.187148    64 RocksEngineConfig.cpp:366] Emplace rocksdb option max_bytes_for_level_base=268435456
+I20220315 00:38:19.187196    64 RocksEngineConfig.cpp:366] Emplace rocksdb option max_write_buffer_number=4
+I20220315 00:38:19.187225    64 RocksEngineConfig.cpp:366] Emplace rocksdb option write_buffer_size=67108864
+I20220315 00:38:19.187597    64 RocksEngineConfig.cpp:366] Emplace rocksdb option block_size=8192
+I20220315 00:38:19.243012    64 RocksEngine.cpp:142] open rocksdb on /data/storage/nebula/1/data
+I20220315 00:38:19.243413    64 TransactionManager.cpp:181] space=1, part=46 added
+I20220315 00:38:19.243949    64 NebulaStore.cpp:329] Space 1, part 46 has been added, asLearner 0
+I20220315 00:38:19.244271    64 TransactionManager.cpp:181] space=1, part=43 added
+I20220315 00:38:19.244446    64 NebulaStore.cpp:329] Space 1, part 43 has been added, asLearner 0
+I20220315 00:38:19.244767    64 TransactionManager.cpp:181] space=1, part=40 added
+I20220315 00:38:19.244954    64 NebulaStore.cpp:329] Space 1, part 40 has been added, asLearner 0
+I20220315 00:38:19.245267    64 TransactionManager.cpp:181] space=1, part=37 added
+I20220315 00:38:19.245422    64 NebulaStore.cpp:329] Space 1, part 37 has been added, asLearner 0
+I20220315 00:38:19.245728    64 TransactionManager.cpp:181] space=1, part=34 added
+I20220315 00:38:19.245890    64 NebulaStore.cpp:329] Space 1, part 34 has been added, asLearner 0
+I20220315 00:38:19.246167    64 TransactionManager.cpp:181] space=1, part=31 added
+I20220315 00:38:19.246342    64 NebulaStore.cpp:329] Space 1, part 31 has been added, asLearner 0
+I20220315 00:38:19.246618    64 TransactionManager.cpp:181] space=1, part=28 added
+I20220315 00:38:19.246785    64 NebulaStore.cpp:329] Space 1, part 28 has been added, asLearner 0
+I20220315 00:38:19.247051    64 TransactionManager.cpp:181] space=1, part=25 added
+I20220315 00:38:19.247203    64 NebulaStore.cpp:329] Space 1, part 25 has been added, asLearner 0
+I20220315 00:38:19.247473    64 TransactionManager.cpp:181] space=1, part=10 added
+I20220315 00:38:19.247624    64 NebulaStore.cpp:329] Space 1, part 10 has been added, asLearner 0
+I20220315 00:38:19.247897    64 TransactionManager.cpp:181] space=1, part=7 added
+I20220315 00:38:19.248064    64 NebulaStore.cpp:329] Space 1, part 7 has been added, asLearner 0
+I20220315 00:38:19.248328    64 TransactionManager.cpp:181] space=1, part=1 added
+I20220315 00:38:19.248736    64 NebulaStore.cpp:329] Space 1, part 1 has been added, asLearner 0
+I20220315 00:38:19.249050    64 TransactionManager.cpp:181] space=1, part=73 added
+I20220315 00:38:19.249262    64 NebulaStore.cpp:329] Space 1, part 73 has been added, asLearner 0
+I20220315 00:38:19.249547    64 TransactionManager.cpp:181] space=1, part=4 added
+I20220315 00:38:19.249706    64 NebulaStore.cpp:329] Space 1, part 4 has been added, asLearner 0
+I20220315 00:38:19.249979    64 TransactionManager.cpp:181] space=1, part=70 added
+I20220315 00:38:19.250133    64 NebulaStore.cpp:329] Space 1, part 70 has been added, asLearner 0
+I20220315 00:38:19.250411    64 TransactionManager.cpp:181] space=1, part=64 added
+I20220315 00:38:19.250630    64 NebulaStore.cpp:329] Space 1, part 64 has been added, asLearner 0
+I20220315 00:38:19.250916    64 TransactionManager.cpp:181] space=1, part=52 added
+I20220315 00:38:19.251101    64 NebulaStore.cpp:329] Space 1, part 52 has been added, asLearner 0
+I20220315 00:38:19.251374    64 TransactionManager.cpp:181] space=1, part=67 added
+I20220315 00:38:19.251551    64 NebulaStore.cpp:329] Space 1, part 67 has been added, asLearner 0
+I20220315 00:38:19.251811    64 TransactionManager.cpp:181] space=1, part=100 added
+I20220315 00:38:19.251981    64 NebulaStore.cpp:329] Space 1, part 100 has been added, asLearner 0
+I20220315 00:38:19.252264    64 TransactionManager.cpp:181] space=1, part=88 added
+I20220315 00:38:19.252480    64 NebulaStore.cpp:329] Space 1, part 88 has been added, asLearner 0
+I20220315 00:38:19.252800    64 TransactionManager.cpp:181] space=1, part=19 added
+I20220315 00:38:19.252995    64 NebulaStore.cpp:329] Space 1, part 19 has been added, asLearner 0
+I20220315 00:38:19.253293    64 TransactionManager.cpp:181] space=1, part=55 added
+I20220315 00:38:19.253469    64 NebulaStore.cpp:329] Space 1, part 55 has been added, asLearner 0
+I20220315 00:38:19.253729    64 TransactionManager.cpp:181] space=1, part=91 added
+I20220315 00:38:19.253906    64 NebulaStore.cpp:329] Space 1, part 91 has been added, asLearner 0
+I20220315 00:38:19.254173    64 TransactionManager.cpp:181] space=1, part=22 added
+I20220315 00:38:19.254386    64 NebulaStore.cpp:329] Space 1, part 22 has been added, asLearner 0
+I20220315 00:38:19.254691    64 TransactionManager.cpp:181] space=1, part=58 added
+I20220315 00:38:19.254904    64 NebulaStore.cpp:329] Space 1, part 58 has been added, asLearner 0
+I20220315 00:38:19.255209    64 TransactionManager.cpp:181] space=1, part=61 added
+I20220315 00:38:19.255379    64 NebulaStore.cpp:329] Space 1, part 61 has been added, asLearner 0
+I20220315 00:38:19.255646    64 TransactionManager.cpp:181] space=1, part=97 added
+I20220315 00:38:19.255843    64 NebulaStore.cpp:329] Space 1, part 97 has been added, asLearner 0
+I20220315 00:38:19.256127    64 TransactionManager.cpp:181] space=1, part=94 added
+I20220315 00:38:19.256345    64 NebulaStore.cpp:329] Space 1, part 94 has been added, asLearner 0
+I20220315 00:38:19.256646    64 TransactionManager.cpp:181] space=1, part=85 added
+I20220315 00:38:19.256911    64 NebulaStore.cpp:329] Space 1, part 85 has been added, asLearner 0
+I20220315 00:38:19.257215    64 TransactionManager.cpp:181] space=1, part=16 added
+I20220315 00:38:19.257393    64 NebulaStore.cpp:329] Space 1, part 16 has been added, asLearner 0
+I20220315 00:38:19.257658    64 TransactionManager.cpp:181] space=1, part=82 added
+I20220315 00:38:19.257835    64 NebulaStore.cpp:329] Space 1, part 82 has been added, asLearner 0
+I20220315 00:38:19.258103    64 TransactionManager.cpp:181] space=1, part=13 added
+I20220315 00:38:19.258301    64 NebulaStore.cpp:329] Space 1, part 13 has been added, asLearner 0
+I20220315 00:38:19.258558    64 TransactionManager.cpp:181] space=1, part=79 added
+I20220315 00:38:19.258733    64 NebulaStore.cpp:329] Space 1, part 79 has been added, asLearner 0
+I20220315 00:38:19.259016    64 TransactionManager.cpp:181] space=1, part=76 added
+I20220315 00:38:19.259202    64 NebulaStore.cpp:329] Space 1, part 76 has been added, asLearner 0
+I20220315 00:38:19.259490    64 TransactionManager.cpp:181] space=1, part=49 added
+I20220315 00:38:19.259671    64 NebulaStore.cpp:329] Space 1, part 49 has been added, asLearner 0
+I20220315 00:38:19.413071    65 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=22, term=1
+I20220315 00:38:19.413175    65 TransactionManager.cpp:212] scanPrimes(), space=1, part=22, term=1
+I20220315 00:38:19.413491    65 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 22, termId = 1
+I20220315 00:38:19.446868    68 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=73, term=1
+I20220315 00:38:19.446967    68 TransactionManager.cpp:212] scanPrimes(), space=1, part=73, term=1
+I20220315 00:38:19.447109    68 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 73, termId = 1
+I20220315 00:38:19.454057    68 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=25, term=1
+I20220315 00:38:19.454147    68 TransactionManager.cpp:212] scanPrimes(), space=1, part=25, term=1
+I20220315 00:38:19.454236    68 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 25, termId = 1
+I20220315 00:38:19.454684    66 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=46, term=1
+I20220315 00:38:19.454758    66 TransactionManager.cpp:212] scanPrimes(), space=1, part=46, term=1
+I20220315 00:38:19.454947    66 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 46, termId = 1
+I20220315 00:38:19.487260    65 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=82, term=1
+I20220315 00:38:19.487377    65 TransactionManager.cpp:212] scanPrimes(), space=1, part=82, term=1
+I20220315 00:38:19.487465    65 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 82, termId = 1
+I20220315 00:38:19.551128    68 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=91, term=1
+I20220315 00:38:19.551165    68 TransactionManager.cpp:212] scanPrimes(), space=1, part=91, term=1
+I20220315 00:38:19.551203    68 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 91, termId = 1
+I20220315 00:38:19.555858    67 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=55, term=1
+I20220315 00:38:19.555897    67 TransactionManager.cpp:212] scanPrimes(), space=1, part=55, term=1
+I20220315 00:38:19.555977    67 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 55, termId = 1
+I20220315 00:38:19.579015    66 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=49, term=1
+I20220315 00:38:19.579049    66 TransactionManager.cpp:212] scanPrimes(), space=1, part=49, term=1
+I20220315 00:38:19.579077    66 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 49, termId = 1
+I20220315 00:38:19.655436    65 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=34, term=1
+I20220315 00:38:19.655539    65 TransactionManager.cpp:212] scanPrimes(), space=1, part=34, term=1
+I20220315 00:38:19.655656    65 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 34, termId = 1
+I20220315 00:38:19.689774    66 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=37, term=1
+I20220315 00:38:19.689806    66 TransactionManager.cpp:212] scanPrimes(), space=1, part=37, term=1
+I20220315 00:38:19.689837    66 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 37, termId = 1
+I20220315 00:38:19.689934    67 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=19, term=1
+I20220315 00:38:19.689958    67 TransactionManager.cpp:212] scanPrimes(), space=1, part=19, term=1
+I20220315 00:38:19.689986    67 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 19, termId = 1
+I20220315 00:38:19.713276    66 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=7, term=1
+I20220315 00:38:19.713311    66 TransactionManager.cpp:212] scanPrimes(), space=1, part=7, term=1
+I20220315 00:38:19.713349    66 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 7, termId = 1
+I20220315 00:38:19.764418    68 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=13, term=1
+I20220315 00:38:19.764452    67 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=100, term=1
+I20220315 00:38:19.764801    67 TransactionManager.cpp:212] scanPrimes(), space=1, part=100, term=1
+I20220315 00:38:19.764838    67 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 100, termId = 1
+I20220315 00:38:19.764766    68 TransactionManager.cpp:212] scanPrimes(), space=1, part=13, term=1
+I20220315 00:38:19.764883    68 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 13, termId = 1
+I20220315 00:38:19.797217    67 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=88, term=1
+I20220315 00:38:19.797257    67 TransactionManager.cpp:212] scanPrimes(), space=1, part=88, term=1
+I20220315 00:38:19.797300    67 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 88, termId = 1
+I20220315 00:38:19.829358    66 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=43, term=1
+I20220315 00:38:19.829387    66 TransactionManager.cpp:212] scanPrimes(), space=1, part=43, term=1
+I20220315 00:38:19.829422    66 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 43, termId = 1
+I20220315 00:38:19.883606    65 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=58, term=1
+I20220315 00:38:19.883641    65 TransactionManager.cpp:212] scanPrimes(), space=1, part=58, term=1
+I20220315 00:38:19.883675    65 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 58, termId = 1
+I20220315 00:38:19.899052    68 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=76, term=1
+I20220315 00:38:19.899088    68 TransactionManager.cpp:212] scanPrimes(), space=1, part=76, term=1
+I20220315 00:38:19.899127    68 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 76, termId = 1
+I20220315 00:38:19.906196    67 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=97, term=1
+I20220315 00:38:19.906234    67 TransactionManager.cpp:212] scanPrimes(), space=1, part=97, term=1
+I20220315 00:38:19.906275    67 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 97, termId = 1
+I20220315 00:38:19.966351    66 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=61, term=1
+I20220315 00:38:19.966388    66 TransactionManager.cpp:212] scanPrimes(), space=1, part=61, term=1
+I20220315 00:38:19.966429    66 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 61, termId = 1
+I20220315 00:38:19.989663    65 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=94, term=1
+I20220315 00:38:19.989707    65 TransactionManager.cpp:212] scanPrimes(), space=1, part=94, term=1
+I20220315 00:38:19.989768    65 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 94, termId = 1
+I20220315 00:38:20.009162    68 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=10, term=1
+I20220315 00:38:20.009205    68 TransactionManager.cpp:212] scanPrimes(), space=1, part=10, term=1
+I20220315 00:38:20.009246    68 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 10, termId = 1
+I20220315 00:38:20.047358    67 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=64, term=1
+I20220315 00:38:20.047391    67 TransactionManager.cpp:212] scanPrimes(), space=1, part=64, term=1
+I20220315 00:38:20.047425    67 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 64, termId = 1
+I20220315 00:38:20.053431    66 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=4, term=1
+I20220315 00:38:20.053463    66 TransactionManager.cpp:212] scanPrimes(), space=1, part=4, term=1
+I20220315 00:38:20.053496    66 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 4, termId = 1
+I20220315 00:38:20.085630    65 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=52, term=1
+I20220315 00:38:20.085667    65 TransactionManager.cpp:212] scanPrimes(), space=1, part=52, term=1
+I20220315 00:38:20.085701    65 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 52, termId = 1
+I20220315 00:38:20.089740    68 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=40, term=1
+I20220315 00:38:20.089776    68 TransactionManager.cpp:212] scanPrimes(), space=1, part=40, term=1
+I20220315 00:38:20.089809    68 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 40, termId = 1
+I20220315 00:38:20.101269    67 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=16, term=1
+I20220315 00:38:20.101303    67 TransactionManager.cpp:212] scanPrimes(), space=1, part=16, term=1
+I20220315 00:38:20.101342    67 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 16, termId = 1
+I20220315 00:38:20.121515    66 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=67, term=1
+I20220315 00:38:20.121551    66 TransactionManager.cpp:212] scanPrimes(), space=1, part=67, term=1
+I20220315 00:38:20.121588    66 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 67, termId = 1
+I20220315 00:38:20.136965    65 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=31, term=1
+I20220315 00:38:20.136999    65 TransactionManager.cpp:212] scanPrimes(), space=1, part=31, term=1
+I20220315 00:38:20.137032    65 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 31, termId = 1
+I20220315 00:38:20.161653    68 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=70, term=1
+I20220315 00:38:20.161696    68 TransactionManager.cpp:212] scanPrimes(), space=1, part=70, term=1
+I20220315 00:38:20.161753    68 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 70, termId = 1
+I20220315 00:38:20.169909    67 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=1, term=1
+I20220315 00:38:20.169962    67 TransactionManager.cpp:212] scanPrimes(), space=1, part=1, term=1
+I20220315 00:38:20.170012    67 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 1, termId = 1
+I20220315 00:38:20.221877    66 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=28, term=1
+I20220315 00:38:20.221935    66 TransactionManager.cpp:212] scanPrimes(), space=1, part=28, term=1
+I20220315 00:38:20.221985    66 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 28, termId = 1
+I20220315 00:38:20.245507    65 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=85, term=1
+I20220315 00:38:20.245617    65 TransactionManager.cpp:212] scanPrimes(), space=1, part=85, term=1
+I20220315 00:38:20.245713    65 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 85, termId = 1
+I20220315 00:38:20.257807    68 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=79, term=1
+I20220315 00:38:20.257913    68 TransactionManager.cpp:212] scanPrimes(), space=1, part=79, term=1
+I20220315 00:38:20.258038    68 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 79, termId = 1
+I20220315 00:38:29.288885    64 MetaClient.cpp:3046] Load leader of "storaged0":9779 in 1 space
+I20220315 00:38:29.289043    64 MetaClient.cpp:3046] Load leader of "storaged1":9779 in 0 space
+I20220315 00:38:29.289222    64 MetaClient.cpp:3046] Load leader of "storaged2":9779 in 1 space
+I20220315 00:38:29.289310    64 MetaClient.cpp:3052] Load leader ok
+I20220315 00:38:39.314659    64 MetaClient.cpp:3046] Load leader of "storaged0":9779 in 1 space
+I20220315 00:38:39.314844    64 MetaClient.cpp:3046] Load leader of "storaged1":9779 in 1 space
+I20220315 00:38:39.314939    64 MetaClient.cpp:3046] Load leader of "storaged2":9779 in 1 space
+I20220315 00:38:39.314976    64 MetaClient.cpp:3052] Load leader ok

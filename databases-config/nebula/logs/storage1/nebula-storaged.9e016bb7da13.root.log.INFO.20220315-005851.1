@@ -1,0 +1,956 @@
+Log file created at: 2022/03/15 00:58:51
+Running on machine: 9e016bb7da13
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20220315 00:58:51.523586     1 StorageDaemon.cpp:128] localhost = "storaged1":9779
+I20220315 00:58:51.523907     1 StorageDaemon.cpp:143] data path= /data/storage
+I20220315 00:58:51.531652     1 MetaClient.cpp:82] Create meta client to "metad2":9559
+I20220315 00:58:51.531706     1 MetaClient.cpp:83] root path: /usr/local/nebula, data path size: 1
+I20220315 00:58:51.542659    49 ThriftClientManager-inl.h:67] resolve "metad1":9559 as "192.168.80.4":9559
+W20220315 00:58:51.544598     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20220315 00:58:51.550753    55 ThriftClientManager-inl.h:67] resolve "metad1":9559 as "192.168.80.4":9559
+E20220315 00:58:51.551751     1 MetaClient.cpp:100] Heartbeat failed, status:Machine not existed!
+I20220315 00:58:51.551973     1 MetaClient.cpp:131] Waiting for the metad to be ready!
+W20220315 00:59:01.552256     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20220315 00:59:01.555260    56 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "192.168.80.3":9559
+E20220315 00:59:01.559125     1 MetaClient.cpp:100] Heartbeat failed, status:Machine not existed!
+I20220315 00:59:01.559273     1 MetaClient.cpp:131] Waiting for the metad to be ready!
+W20220315 00:59:11.559475     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20220315 00:59:11.562609    57 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "192.168.80.2":9559
+I20220315 00:59:11.567365    57 MetaClient.cpp:2493] Persist the cluster Id from metad 5515666330599404307
+I20220315 00:59:11.567499    57 FileBasedClusterIdMan.cpp:21] Remove the existed file cluster.id
+I20220315 00:59:11.567714    57 FileBasedClusterIdMan.cpp:34] Persist clusterId 5515666330599404307 succeeded!
+I20220315 00:59:11.569487    58 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "192.168.80.2":9559
+I20220315 00:59:11.571832    59 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "192.168.80.2":9559
+I20220315 00:59:11.573714    60 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "192.168.80.2":9559
+I20220315 00:59:11.575776    61 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "192.168.80.2":9559
+I20220315 00:59:11.577739    62 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "192.168.80.2":9559
+I20220315 00:59:11.579460    63 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "192.168.80.2":9559
+I20220315 00:59:11.581394    64 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "192.168.80.2":9559
+I20220315 00:59:11.605209    65 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "192.168.80.2":9559
+I20220315 00:59:11.606304    66 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "192.168.80.2":9559
+I20220315 00:59:11.607353    67 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "192.168.80.2":9559
+I20220315 00:59:11.608402    68 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "192.168.80.2":9559
+I20220315 00:59:11.609508    69 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "192.168.80.2":9559
+I20220315 00:59:11.610349    49 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "192.168.80.2":9559
+I20220315 00:59:11.611086    55 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "192.168.80.2":9559
+I20220315 00:59:11.612030     1 MetaClient.cpp:3046] Load leader of "storaged0":9779 in 1 space
+I20220315 00:59:11.612078     1 MetaClient.cpp:3046] Load leader of "storaged1":9779 in 1 space
+I20220315 00:59:11.612093     1 MetaClient.cpp:3046] Load leader of "storaged2":9779 in 1 space
+I20220315 00:59:11.612107     1 MetaClient.cpp:3052] Load leader ok
+I20220315 00:59:11.612336     1 MetaClient.cpp:142] Register time task for heartbeat!
+I20220315 00:59:11.612370     1 StorageServer.cpp:192] Init schema manager
+I20220315 00:59:11.612385     1 StorageServer.cpp:195] Init index manager
+I20220315 00:59:11.612396     1 StorageServer.cpp:198] Init kvstore
+I20220315 00:59:11.612445     1 NebulaStore.cpp:51] Start the raft service...
+I20220315 00:59:11.612963     1 NebulaSnapshotManager.cpp:25] Send snapshot is rate limited to 10485760 for each part by default
+I20220315 00:59:11.613168     1 RaftexService.cpp:63] Init thrift server for raft service, port: 9780
+I20220315 00:59:11.613271    76 RaftexService.cpp:94] Starting the Raftex Service
+I20220315 00:59:11.633816    76 RaftexService.cpp:84] Starting the Raftex Service on 9780
+I20220315 00:59:11.633853    76 RaftexService.cpp:106] Start the Raftex Service successfully
+I20220315 00:59:11.633962     1 NebulaStore.cpp:83] Scan the local path, and init the spaces_
+I20220315 00:59:11.634022     1 NebulaStore.cpp:89] Scan path "/data/storage/nebula/1"
+I20220315 00:59:11.634124     1 RocksEngineConfig.cpp:366] Emplace rocksdb option max_bytes_for_level_base=268435456
+I20220315 00:59:11.634140     1 RocksEngineConfig.cpp:366] Emplace rocksdb option max_write_buffer_number=4
+I20220315 00:59:11.634150     1 RocksEngineConfig.cpp:366] Emplace rocksdb option write_buffer_size=67108864
+I20220315 00:59:11.634315     1 RocksEngineConfig.cpp:366] Emplace rocksdb option block_size=8192
+I20220315 00:59:11.715736     1 RocksEngine.cpp:142] open rocksdb on /data/storage/nebula/1/data
+I20220315 00:59:11.715852     1 NebulaStore.cpp:113] Load space 1 from disk
+I20220315 00:59:11.716027     1 NebulaStore.cpp:141] Need to open 33 parts of space 1
+I20220315 00:59:11.719535    71 NebulaStore.cpp:145] Load part 1, 3 from disk
+I20220315 00:59:11.721858    73 NebulaStore.cpp:145] Load part 1, 9 from disk
+I20220315 00:59:11.722263    74 NebulaStore.cpp:145] Load part 1, 12 from disk
+I20220315 00:59:11.722606    72 NebulaStore.cpp:145] Load part 1, 6 from disk
+I20220315 00:59:11.724207    71 NebulaStore.cpp:145] Load part 1, 15 from disk
+I20220315 00:59:11.725180    74 NebulaStore.cpp:145] Load part 1, 24 from disk
+I20220315 00:59:11.725571    73 NebulaStore.cpp:145] Load part 1, 21 from disk
+I20220315 00:59:11.727373    72 NebulaStore.cpp:145] Load part 1, 18 from disk
+I20220315 00:59:11.728089    71 NebulaStore.cpp:145] Load part 1, 27 from disk
+I20220315 00:59:11.730791    72 NebulaStore.cpp:145] Load part 1, 30 from disk
+I20220315 00:59:11.730989    73 NebulaStore.cpp:145] Load part 1, 33 from disk
+I20220315 00:59:11.731748    71 NebulaStore.cpp:145] Load part 1, 39 from disk
+I20220315 00:59:11.733525    72 NebulaStore.cpp:145] Load part 1, 42 from disk
+I20220315 00:59:11.735141    71 NebulaStore.cpp:145] Load part 1, 51 from disk
+I20220315 00:59:11.736790    72 NebulaStore.cpp:145] Load part 1, 54 from disk
+I20220315 00:59:11.739280    73 NebulaStore.cpp:145] Load part 1, 45 from disk
+I20220315 00:59:11.739666    71 NebulaStore.cpp:145] Load part 1, 63 from disk
+I20220315 00:59:11.739881    74 NebulaStore.cpp:145] Load part 1, 36 from disk
+I20220315 00:59:11.741521    72 NebulaStore.cpp:145] Load part 1, 66 from disk
+I20220315 00:59:11.743420    71 NebulaStore.cpp:145] Load part 1, 75 from disk
+I20220315 00:59:11.744197    73 NebulaStore.cpp:145] Load part 1, 57 from disk
+I20220315 00:59:11.746007    72 NebulaStore.cpp:145] Load part 1, 78 from disk
+I20220315 00:59:11.746654    71 NebulaStore.cpp:145] Load part 1, 87 from disk
+I20220315 00:59:11.747628    73 NebulaStore.cpp:145] Load part 1, 69 from disk
+I20220315 00:59:11.748986    72 NebulaStore.cpp:145] Load part 1, 90 from disk
+I20220315 00:59:11.749807    71 NebulaStore.cpp:145] Load part 1, 99 from disk
+I20220315 00:59:11.750892    74 NebulaStore.cpp:145] Load part 1, 48 from disk
+I20220315 00:59:11.752288    73 NebulaStore.cpp:145] Load part 1, 81 from disk
+I20220315 00:59:11.753688    74 NebulaStore.cpp:145] Load part 1, 60 from disk
+I20220315 00:59:11.755117    73 NebulaStore.cpp:145] Load part 1, 93 from disk
+I20220315 00:59:11.755291    74 NebulaStore.cpp:145] Load part 1, 72 from disk
+I20220315 00:59:11.756590    74 NebulaStore.cpp:145] Load part 1, 84 from disk
+I20220315 00:59:11.757938    74 NebulaStore.cpp:145] Load part 1, 96 from disk
+I20220315 00:59:11.758013     1 NebulaStore.cpp:160] Load space 1 complete
+I20220315 00:59:11.758111     1 NebulaStore.cpp:89] Scan path "/data/storage/nebula/0"
+I20220315 00:59:11.758147     1 NebulaStore.cpp:568] Try to remove space directory: /data/storage/nebula/0
+I20220315 00:59:11.758986     1 NebulaStore.cpp:570] Space directory removed: /data/storage/nebula/0
+I20220315 00:59:11.759027     1 NebulaStore.cpp:169] Init data from partManager for "storaged1":9779
+I20220315 00:59:11.759080     1 NebulaStore.cpp:264] Data space 1 has existed!
+I20220315 00:59:11.759109     1 NebulaStore.cpp:304] [Space: 1, Part: 3] has existed!
+I20220315 00:59:11.759145     1 NebulaStore.cpp:304] [Space: 1, Part: 6] has existed!
+I20220315 00:59:11.759164     1 NebulaStore.cpp:304] [Space: 1, Part: 9] has existed!
+I20220315 00:59:11.759182     1 NebulaStore.cpp:304] [Space: 1, Part: 12] has existed!
+I20220315 00:59:11.759200     1 NebulaStore.cpp:304] [Space: 1, Part: 15] has existed!
+I20220315 00:59:11.759219     1 NebulaStore.cpp:304] [Space: 1, Part: 18] has existed!
+I20220315 00:59:11.759238     1 NebulaStore.cpp:304] [Space: 1, Part: 21] has existed!
+I20220315 00:59:11.759256     1 NebulaStore.cpp:304] [Space: 1, Part: 24] has existed!
+I20220315 00:59:11.759274     1 NebulaStore.cpp:304] [Space: 1, Part: 27] has existed!
+I20220315 00:59:11.759292     1 NebulaStore.cpp:304] [Space: 1, Part: 30] has existed!
+I20220315 00:59:11.759310     1 NebulaStore.cpp:304] [Space: 1, Part: 33] has existed!
+I20220315 00:59:11.759328     1 NebulaStore.cpp:304] [Space: 1, Part: 36] has existed!
+I20220315 00:59:11.759346     1 NebulaStore.cpp:304] [Space: 1, Part: 39] has existed!
+I20220315 00:59:11.759364     1 NebulaStore.cpp:304] [Space: 1, Part: 42] has existed!
+I20220315 00:59:11.759383     1 NebulaStore.cpp:304] [Space: 1, Part: 45] has existed!
+I20220315 00:59:11.759402     1 NebulaStore.cpp:304] [Space: 1, Part: 48] has existed!
+I20220315 00:59:11.759418     1 NebulaStore.cpp:304] [Space: 1, Part: 51] has existed!
+I20220315 00:59:11.759435     1 NebulaStore.cpp:304] [Space: 1, Part: 54] has existed!
+I20220315 00:59:11.759452     1 NebulaStore.cpp:304] [Space: 1, Part: 57] has existed!
+I20220315 00:59:11.759469     1 NebulaStore.cpp:304] [Space: 1, Part: 60] has existed!
+I20220315 00:59:11.759486     1 NebulaStore.cpp:304] [Space: 1, Part: 63] has existed!
+I20220315 00:59:11.759503     1 NebulaStore.cpp:304] [Space: 1, Part: 66] has existed!
+I20220315 00:59:11.759521     1 NebulaStore.cpp:304] [Space: 1, Part: 69] has existed!
+I20220315 00:59:11.759537     1 NebulaStore.cpp:304] [Space: 1, Part: 72] has existed!
+I20220315 00:59:11.759555     1 NebulaStore.cpp:304] [Space: 1, Part: 75] has existed!
+I20220315 00:59:11.759572     1 NebulaStore.cpp:304] [Space: 1, Part: 78] has existed!
+I20220315 00:59:11.759588     1 NebulaStore.cpp:304] [Space: 1, Part: 81] has existed!
+I20220315 00:59:11.759605     1 NebulaStore.cpp:304] [Space: 1, Part: 84] has existed!
+I20220315 00:59:11.759624     1 NebulaStore.cpp:304] [Space: 1, Part: 87] has existed!
+I20220315 00:59:11.759640     1 NebulaStore.cpp:304] [Space: 1, Part: 90] has existed!
+I20220315 00:59:11.759657     1 NebulaStore.cpp:304] [Space: 1, Part: 93] has existed!
+I20220315 00:59:11.759675     1 NebulaStore.cpp:304] [Space: 1, Part: 96] has existed!
+I20220315 00:59:11.759692     1 NebulaStore.cpp:304] [Space: 1, Part: 99] has existed!
+I20220315 00:59:11.759739     1 NebulaStore.cpp:76] Register handler...
+I20220315 00:59:11.759763     1 StorageServer.cpp:201] Init LogMonitor
+I20220315 00:59:11.759907     1 StorageServer.cpp:99] Starting Storage HTTP Service
+I20220315 00:59:11.760310     1 StorageServer.cpp:103] Http Thread Pool started
+I20220315 00:59:11.763701   100 WebService.cpp:123] Web service started on HTTP[19779]
+I20220315 00:59:11.763813     1 TransactionManager.cpp:24] TransactionManager ctor()
+I20220315 00:59:11.763873     1 TransactionManager.cpp:181] space=1, part=96 added
+I20220315 00:59:11.763904     1 TransactionManager.cpp:181] space=1, part=84 added
+I20220315 00:59:11.763927     1 TransactionManager.cpp:181] space=1, part=72 added
+I20220315 00:59:11.763970     1 TransactionManager.cpp:181] space=1, part=93 added
+I20220315 00:59:11.763996     1 TransactionManager.cpp:181] space=1, part=60 added
+I20220315 00:59:11.764019     1 TransactionManager.cpp:181] space=1, part=81 added
+I20220315 00:59:11.764042     1 TransactionManager.cpp:181] space=1, part=48 added
+I20220315 00:59:11.764065     1 TransactionManager.cpp:181] space=1, part=99 added
+I20220315 00:59:11.764088     1 TransactionManager.cpp:181] space=1, part=90 added
+I20220315 00:59:11.764111     1 TransactionManager.cpp:181] space=1, part=69 added
+I20220315 00:59:11.764133     1 TransactionManager.cpp:181] space=1, part=33 added
+I20220315 00:59:11.764174     1 TransactionManager.cpp:181] space=1, part=30 added
+I20220315 00:59:11.764201     1 TransactionManager.cpp:181] space=1, part=27 added
+I20220315 00:59:11.764226     1 TransactionManager.cpp:181] space=1, part=18 added
+I20220315 00:59:11.764250     1 TransactionManager.cpp:181] space=1, part=87 added
+I20220315 00:59:11.764295     1 TransactionManager.cpp:181] space=1, part=21 added
+I20220315 00:59:11.764319     1 TransactionManager.cpp:181] space=1, part=24 added
+I20220315 00:59:11.764343     1 TransactionManager.cpp:181] space=1, part=9 added
+I20220315 00:59:11.764365     1 TransactionManager.cpp:181] space=1, part=78 added
+I20220315 00:59:11.764387     1 TransactionManager.cpp:181] space=1, part=3 added
+I20220315 00:59:11.764410     1 TransactionManager.cpp:181] space=1, part=12 added
+I20220315 00:59:11.764431     1 TransactionManager.cpp:181] space=1, part=6 added
+I20220315 00:59:11.764453     1 TransactionManager.cpp:181] space=1, part=75 added
+I20220315 00:59:11.764477     1 TransactionManager.cpp:181] space=1, part=15 added
+I20220315 00:59:11.764497     1 TransactionManager.cpp:181] space=1, part=39 added
+I20220315 00:59:11.764519     1 TransactionManager.cpp:181] space=1, part=42 added
+I20220315 00:59:11.764541     1 TransactionManager.cpp:181] space=1, part=51 added
+I20220315 00:59:11.764564     1 TransactionManager.cpp:181] space=1, part=54 added
+I20220315 00:59:11.764586     1 TransactionManager.cpp:181] space=1, part=45 added
+I20220315 00:59:11.764608     1 TransactionManager.cpp:181] space=1, part=63 added
+I20220315 00:59:11.764631     1 TransactionManager.cpp:181] space=1, part=36 added
+I20220315 00:59:11.764652     1 TransactionManager.cpp:181] space=1, part=66 added
+I20220315 00:59:11.764698     1 TransactionManager.cpp:181] space=1, part=57 added
+I20220315 00:59:11.764729     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=96, term=1
+I20220315 00:59:11.764760     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 96, termId = 1
+I20220315 00:59:11.764783     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=84, term=1
+I20220315 00:59:11.764816     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 84, termId = 1
+I20220315 00:59:11.764840     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=72, term=1
+I20220315 00:59:11.764866     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 72, termId = 1
+I20220315 00:59:11.764889     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=93, term=1
+I20220315 00:59:11.764920     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 93, termId = 1
+I20220315 00:59:11.764941     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=60, term=1
+I20220315 00:59:11.764966     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 60, termId = 1
+I20220315 00:59:11.764988     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=81, term=1
+I20220315 00:59:11.765013     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 81, termId = 1
+I20220315 00:59:11.765036     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=48, term=1
+I20220315 00:59:11.765061     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 48, termId = 1
+I20220315 00:59:11.765082     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=99, term=1
+I20220315 00:59:11.765120     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 99, termId = 1
+I20220315 00:59:11.765144     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=90, term=1
+I20220315 00:59:11.765170     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 90, termId = 1
+I20220315 00:59:11.765194     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=69, term=1
+I20220315 00:59:11.765220     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 69, termId = 1
+I20220315 00:59:11.765242     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=33, term=1
+I20220315 00:59:11.765281     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 33, termId = 1
+I20220315 00:59:11.765306     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=30, term=1
+I20220315 00:59:11.765341     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 30, termId = 1
+I20220315 00:59:11.765367     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=27, term=1
+I20220315 00:59:11.765393     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 27, termId = 1
+I20220315 00:59:11.765416     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=18, term=1
+I20220315 00:59:11.765441     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 18, termId = 1
+I20220315 00:59:11.765470     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=87, term=1
+I20220315 00:59:11.765501     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 87, termId = 1
+I20220315 00:59:11.765523     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=21, term=1
+I20220315 00:59:11.765547     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 21, termId = 1
+I20220315 00:59:11.765569     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=24, term=1
+I20220315 00:59:11.765594     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 24, termId = 1
+I20220315 00:59:11.765616     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=9, term=1
+I20220315 00:59:11.765640     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 9, termId = 1
+I20220315 00:59:11.765661     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=78, term=1
+I20220315 00:59:11.765686     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 78, termId = 1
+I20220315 00:59:11.765707     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=3, term=1
+I20220315 00:59:11.765730     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 3, termId = 1
+I20220315 00:59:11.765753     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=12, term=1
+I20220315 00:59:11.765776     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 12, termId = 1
+I20220315 00:59:11.765797     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=6, term=1
+I20220315 00:59:11.765822     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 6, termId = 1
+I20220315 00:59:11.765844     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=75, term=1
+I20220315 00:59:11.765870     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 75, termId = 1
+I20220315 00:59:11.765893     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=15, term=1
+I20220315 00:59:11.765918     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 15, termId = 1
+I20220315 00:59:11.765940     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=39, term=1
+I20220315 00:59:11.765964     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 39, termId = 1
+I20220315 00:59:11.765985     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=42, term=1
+I20220315 00:59:11.766021     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 42, termId = 1
+I20220315 00:59:11.766044     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=51, term=1
+I20220315 00:59:11.766070     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 51, termId = 1
+I20220315 00:59:11.766108     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=54, term=1
+I20220315 00:59:11.766134     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 54, termId = 1
+I20220315 00:59:11.766158     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=45, term=1
+I20220315 00:59:11.766185     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 45, termId = 1
+I20220315 00:59:11.766211     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=63, term=1
+I20220315 00:59:11.766242     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 63, termId = 1
+I20220315 00:59:11.766275     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=36, term=1
+I20220315 00:59:11.766304     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 36, termId = 1
+I20220315 00:59:11.766326     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=66, term=1
+I20220315 00:59:11.766353     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 66, termId = 1
+I20220315 00:59:11.766376     1 TransactionManager.cpp:212] scanPrimes(), space=1, part=57, term=1
+I20220315 00:59:11.766412     1 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 57, termId = 1
+I20220315 00:59:11.766729     1 RocksEngineConfig.cpp:366] Emplace rocksdb option max_bytes_for_level_base=268435456
+I20220315 00:59:11.766772     1 RocksEngineConfig.cpp:366] Emplace rocksdb option max_write_buffer_number=4
+I20220315 00:59:11.766794     1 RocksEngineConfig.cpp:366] Emplace rocksdb option write_buffer_size=67108864
+I20220315 00:59:11.767047     1 RocksEngineConfig.cpp:366] Emplace rocksdb option block_size=8192
+I20220315 00:59:11.819362     1 RocksEngine.cpp:142] open rocksdb on /data/storage/nebula/0/data
+I20220315 00:59:11.819813     1 AdminTaskManager.cpp:22] max concurrent subtasks: 10
+I20220315 00:59:11.820147     1 AdminTaskManager.cpp:40] exit AdminTaskManager::init()
+I20220315 00:59:11.820291   121 AdminTaskManager.cpp:241] waiting for incoming task
+I20220315 00:59:11.821234   125 StorageServer.cpp:318] The internal storage service start(same with admin) on "storaged1":9777
+I20220315 00:59:11.821511   124 StorageServer.cpp:293] The admin service start on "storaged1":9778
+I20220315 00:59:11.834479   123 StorageServer.cpp:264] The storage service start on "storaged1":9779
+I20220315 00:59:11.858834    71 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=3, term=2
+I20220315 00:59:11.858938    71 TransactionManager.cpp:212] scanPrimes(), space=1, part=3, term=2
+I20220315 00:59:11.859151    71 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 3, termId = 2
+I20220315 00:59:11.882356    74 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=66, term=2
+I20220315 00:59:11.882577    74 TransactionManager.cpp:212] scanPrimes(), space=1, part=66, term=2
+I20220315 00:59:11.882836    74 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 66, termId = 2
+I20220315 00:59:11.902523    73 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=72, term=2
+I20220315 00:59:11.902611    73 TransactionManager.cpp:212] scanPrimes(), space=1, part=72, term=2
+I20220315 00:59:11.902817    73 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 72, termId = 2
+I20220315 00:59:11.911608    72 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=24, term=2
+I20220315 00:59:11.911715    72 TransactionManager.cpp:212] scanPrimes(), space=1, part=24, term=2
+I20220315 00:59:11.911929    72 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 24, termId = 2
+I20220315 00:59:11.938179    73 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=33, term=2
+I20220315 00:59:11.938268    74 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=51, term=2
+I20220315 00:59:11.938314    73 TransactionManager.cpp:212] scanPrimes(), space=1, part=33, term=2
+I20220315 00:59:11.938390    74 TransactionManager.cpp:212] scanPrimes(), space=1, part=51, term=2
+I20220315 00:59:11.938597    73 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 33, termId = 2
+I20220315 00:59:11.938643    74 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 51, termId = 2
+I20220315 00:59:11.981856    73 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=57, term=2
+I20220315 00:59:11.981958    73 TransactionManager.cpp:212] scanPrimes(), space=1, part=57, term=2
+I20220315 00:59:11.982132    73 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 57, termId = 2
+I20220315 00:59:12.002343    72 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=39, term=2
+I20220315 00:59:12.002437    72 TransactionManager.cpp:212] scanPrimes(), space=1, part=39, term=2
+I20220315 00:59:12.002631    72 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 39, termId = 2
+I20220315 00:59:12.006531    71 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=84, term=2
+I20220315 00:59:12.006619    71 TransactionManager.cpp:212] scanPrimes(), space=1, part=84, term=2
+I20220315 00:59:12.006772    71 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 84, termId = 2
+I20220315 00:59:12.014119    74 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=42, term=2
+I20220315 00:59:12.014230    74 TransactionManager.cpp:212] scanPrimes(), space=1, part=42, term=2
+I20220315 00:59:12.014362    74 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 42, termId = 2
+I20220315 00:59:12.078090    73 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=21, term=2
+I20220315 00:59:12.078202    73 TransactionManager.cpp:212] scanPrimes(), space=1, part=21, term=2
+I20220315 00:59:12.078374    73 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 21, termId = 2
+I20220315 00:59:12.089195    72 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=27, term=2
+I20220315 00:59:12.089284    72 TransactionManager.cpp:212] scanPrimes(), space=1, part=27, term=2
+I20220315 00:59:12.089408    72 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 27, termId = 2
+I20220315 00:59:12.169554    71 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=69, term=2
+I20220315 00:59:12.169654    71 TransactionManager.cpp:212] scanPrimes(), space=1, part=69, term=2
+I20220315 00:59:12.169828    71 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 69, termId = 2
+I20220315 00:59:12.249167    74 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=96, term=2
+I20220315 00:59:12.249269    74 TransactionManager.cpp:212] scanPrimes(), space=1, part=96, term=2
+I20220315 00:59:12.249402    74 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 96, termId = 2
+I20220315 00:59:12.257206    71 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=48, term=2
+I20220315 00:59:12.257323    71 TransactionManager.cpp:212] scanPrimes(), space=1, part=48, term=2
+I20220315 00:59:12.257346    72 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=18, term=2
+I20220315 00:59:12.257429    72 TransactionManager.cpp:212] scanPrimes(), space=1, part=18, term=2
+I20220315 00:59:12.257495    71 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 48, termId = 2
+I20220315 00:59:12.257563    72 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 18, termId = 2
+I20220315 00:59:12.274159    71 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=15, term=2
+I20220315 00:59:12.274264    71 TransactionManager.cpp:212] scanPrimes(), space=1, part=15, term=2
+I20220315 00:59:12.274432    71 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 15, termId = 2
+I20220315 00:59:12.297313    72 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=75, term=2
+I20220315 00:59:12.297313    73 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=12, term=2
+I20220315 00:59:12.297422    72 TransactionManager.cpp:212] scanPrimes(), space=1, part=75, term=2
+I20220315 00:59:12.297483    73 TransactionManager.cpp:212] scanPrimes(), space=1, part=12, term=2
+I20220315 00:59:12.297677    72 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 75, termId = 2
+I20220315 00:59:12.298269    73 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 12, termId = 2
+I20220315 00:59:12.335295    72 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=93, term=2
+I20220315 00:59:12.335413    72 TransactionManager.cpp:212] scanPrimes(), space=1, part=93, term=2
+I20220315 00:59:12.335605    72 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 93, termId = 2
+I20220315 00:59:12.347259    71 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=81, term=2
+I20220315 00:59:12.347411    71 TransactionManager.cpp:212] scanPrimes(), space=1, part=81, term=2
+I20220315 00:59:12.347609    71 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 81, termId = 2
+I20220315 00:59:12.349774    74 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=45, term=2
+I20220315 00:59:12.349906    74 TransactionManager.cpp:212] scanPrimes(), space=1, part=45, term=2
+I20220315 00:59:12.350101    74 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 45, termId = 2
+I20220315 00:59:12.367091    73 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=30, term=2
+I20220315 00:59:12.367221    73 TransactionManager.cpp:212] scanPrimes(), space=1, part=30, term=2
+I20220315 00:59:12.367416    73 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 30, termId = 2
+I20220315 00:59:12.430287    72 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=54, term=2
+I20220315 00:59:12.430400    72 TransactionManager.cpp:212] scanPrimes(), space=1, part=54, term=2
+I20220315 00:59:12.430568    72 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 54, termId = 2
+I20220315 00:59:12.477926    71 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=87, term=2
+I20220315 00:59:12.478073    71 TransactionManager.cpp:212] scanPrimes(), space=1, part=87, term=2
+I20220315 00:59:12.478294    71 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 87, termId = 2
+I20220315 00:59:12.510143    74 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=36, term=2
+I20220315 00:59:12.510270    74 TransactionManager.cpp:212] scanPrimes(), space=1, part=36, term=2
+I20220315 00:59:12.510500    74 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 36, termId = 2
+I20220315 00:59:12.553503    73 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=60, term=2
+I20220315 00:59:12.553615    73 TransactionManager.cpp:212] scanPrimes(), space=1, part=60, term=2
+I20220315 00:59:12.553776    73 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 60, termId = 2
+I20220315 00:59:12.558694    72 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=9, term=2
+I20220315 00:59:12.558820    72 TransactionManager.cpp:212] scanPrimes(), space=1, part=9, term=2
+I20220315 00:59:12.559031    72 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 9, termId = 2
+I20220315 00:59:12.639117    71 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=99, term=2
+I20220315 00:59:12.639269    71 TransactionManager.cpp:212] scanPrimes(), space=1, part=99, term=2
+I20220315 00:59:12.639432    71 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 99, termId = 2
+I20220315 00:59:12.642400    74 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=6, term=2
+I20220315 00:59:12.642511    74 TransactionManager.cpp:212] scanPrimes(), space=1, part=6, term=2
+I20220315 00:59:12.642706    74 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 6, termId = 2
+I20220315 00:59:12.661761    73 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=78, term=2
+I20220315 00:59:12.661877    73 TransactionManager.cpp:212] scanPrimes(), space=1, part=78, term=2
+I20220315 00:59:12.662073    73 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 78, termId = 2
+I20220315 00:59:12.670800    72 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=63, term=2
+I20220315 00:59:12.670933    72 TransactionManager.cpp:212] scanPrimes(), space=1, part=63, term=2
+I20220315 00:59:12.671121    72 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 63, termId = 2
+I20220315 00:59:12.682801    71 TransactionManager.cpp:206] leader get do scanPrimes space=1, part=90, term=2
+I20220315 00:59:12.682910    71 TransactionManager.cpp:212] scanPrimes(), space=1, part=90, term=2
+I20220315 00:59:12.683104    71 TransactionManager.cpp:256] set curr term spaceId = 1, partId = 90, termId = 2
+I20220315 00:59:32.187453    56 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "192.168.80.2":9559
+I20220315 00:59:32.205003    70 MetaClient.cpp:3046] Load leader of "storaged0":9779 in 1 space
+I20220315 00:59:32.205258    70 MetaClient.cpp:3046] Load leader of "storaged1":9779 in 1 space
+I20220315 00:59:32.205423    70 MetaClient.cpp:3046] Load leader of "storaged2":9779 in 1 space
+I20220315 00:59:32.205485    70 MetaClient.cpp:3052] Load leader ok
+I20220315 01:00:22.292076    70 MetaClient.cpp:3046] Load leader of "storaged0":9779 in 1 space
+I20220315 01:00:22.292227    70 MetaClient.cpp:3046] Load leader of "storaged1":9779 in 1 space
+I20220315 01:00:22.292325    70 MetaClient.cpp:3046] Load leader of "storaged2":9779 in 1 space
+I20220315 01:00:22.292361    70 MetaClient.cpp:3052] Load leader ok
+I20220315 01:00:22.292951    70 NebulaStore.cpp:267] Create data space 2
+I20220315 01:00:22.293486    70 RocksEngineConfig.cpp:366] Emplace rocksdb option max_bytes_for_level_base=268435456
+I20220315 01:00:22.293541    70 RocksEngineConfig.cpp:366] Emplace rocksdb option max_write_buffer_number=4
+I20220315 01:00:22.293570    70 RocksEngineConfig.cpp:366] Emplace rocksdb option write_buffer_size=67108864
+I20220315 01:00:22.294028    70 RocksEngineConfig.cpp:366] Emplace rocksdb option block_size=8192
+I20220315 01:00:22.363983    70 RocksEngine.cpp:142] open rocksdb on /data/storage/nebula/2/data
+I20220315 01:00:22.364578    70 TransactionManager.cpp:181] space=2, part=45 added
+I20220315 01:00:22.365267    70 NebulaStore.cpp:329] Space 2, part 45 has been added, asLearner 0
+I20220315 01:00:22.365700    70 TransactionManager.cpp:181] space=2, part=42 added
+I20220315 01:00:22.366067    70 NebulaStore.cpp:329] Space 2, part 42 has been added, asLearner 0
+I20220315 01:00:22.366492    70 TransactionManager.cpp:181] space=2, part=39 added
+I20220315 01:00:22.366768    70 NebulaStore.cpp:329] Space 2, part 39 has been added, asLearner 0
+I20220315 01:00:22.367151    70 TransactionManager.cpp:181] space=2, part=36 added
+I20220315 01:00:22.367386    70 NebulaStore.cpp:329] Space 2, part 36 has been added, asLearner 0
+I20220315 01:00:22.367760    70 TransactionManager.cpp:181] space=2, part=33 added
+I20220315 01:00:22.368012    70 NebulaStore.cpp:329] Space 2, part 33 has been added, asLearner 0
+I20220315 01:00:22.368387    70 TransactionManager.cpp:181] space=2, part=30 added
+I20220315 01:00:22.368652    70 NebulaStore.cpp:329] Space 2, part 30 has been added, asLearner 0
+I20220315 01:00:22.369114    70 TransactionManager.cpp:181] space=2, part=27 added
+I20220315 01:00:22.369431    70 NebulaStore.cpp:329] Space 2, part 27 has been added, asLearner 0
+I20220315 01:00:22.369827    70 TransactionManager.cpp:181] space=2, part=24 added
+I20220315 01:00:22.370085    70 NebulaStore.cpp:329] Space 2, part 24 has been added, asLearner 0
+I20220315 01:00:22.370487    70 TransactionManager.cpp:181] space=2, part=9 added
+I20220315 01:00:22.370752    70 NebulaStore.cpp:329] Space 2, part 9 has been added, asLearner 0
+I20220315 01:00:22.371134    70 TransactionManager.cpp:181] space=2, part=6 added
+I20220315 01:00:22.371404    70 NebulaStore.cpp:329] Space 2, part 6 has been added, asLearner 0
+I20220315 01:00:22.371840    70 TransactionManager.cpp:181] space=2, part=72 added
+I20220315 01:00:22.372148    70 NebulaStore.cpp:329] Space 2, part 72 has been added, asLearner 0
+I20220315 01:00:22.372539    70 TransactionManager.cpp:181] space=2, part=3 added
+I20220315 01:00:22.372910    70 NebulaStore.cpp:329] Space 2, part 3 has been added, asLearner 0
+I20220315 01:00:22.373329    70 TransactionManager.cpp:181] space=2, part=69 added
+I20220315 01:00:22.373577    70 NebulaStore.cpp:329] Space 2, part 69 has been added, asLearner 0
+I20220315 01:00:22.373945    70 TransactionManager.cpp:181] space=2, part=63 added
+I20220315 01:00:22.374209    70 NebulaStore.cpp:329] Space 2, part 63 has been added, asLearner 0
+I20220315 01:00:22.374606    70 TransactionManager.cpp:181] space=2, part=51 added
+I20220315 01:00:22.374907    70 NebulaStore.cpp:329] Space 2, part 51 has been added, asLearner 0
+I20220315 01:00:22.375324    70 TransactionManager.cpp:181] space=2, part=66 added
+I20220315 01:00:22.375579    70 NebulaStore.cpp:329] Space 2, part 66 has been added, asLearner 0
+I20220315 01:00:22.375959    70 TransactionManager.cpp:181] space=2, part=99 added
+I20220315 01:00:22.376238    70 NebulaStore.cpp:329] Space 2, part 99 has been added, asLearner 0
+I20220315 01:00:22.376621    70 TransactionManager.cpp:181] space=2, part=87 added
+I20220315 01:00:22.376925    70 NebulaStore.cpp:329] Space 2, part 87 has been added, asLearner 0
+I20220315 01:00:22.377346    70 TransactionManager.cpp:181] space=2, part=18 added
+I20220315 01:00:22.377660    70 NebulaStore.cpp:329] Space 2, part 18 has been added, asLearner 0
+I20220315 01:00:22.378046    70 TransactionManager.cpp:181] space=2, part=54 added
+I20220315 01:00:22.378309    70 NebulaStore.cpp:329] Space 2, part 54 has been added, asLearner 0
+I20220315 01:00:22.378700    70 TransactionManager.cpp:181] space=2, part=90 added
+I20220315 01:00:22.378998    70 NebulaStore.cpp:329] Space 2, part 90 has been added, asLearner 0
+I20220315 01:00:22.379390    70 TransactionManager.cpp:181] space=2, part=21 added
+I20220315 01:00:22.379639    70 NebulaStore.cpp:329] Space 2, part 21 has been added, asLearner 0
+I20220315 01:00:22.380035    70 TransactionManager.cpp:181] space=2, part=57 added
+I20220315 01:00:22.380503    70 NebulaStore.cpp:329] Space 2, part 57 has been added, asLearner 0
+I20220315 01:00:22.380967    70 TransactionManager.cpp:181] space=2, part=60 added
+I20220315 01:00:22.381242    70 NebulaStore.cpp:329] Space 2, part 60 has been added, asLearner 0
+I20220315 01:00:22.381650    70 TransactionManager.cpp:181] space=2, part=96 added
+I20220315 01:00:22.381911    70 NebulaStore.cpp:329] Space 2, part 96 has been added, asLearner 0
+I20220315 01:00:22.382275    70 TransactionManager.cpp:181] space=2, part=93 added
+I20220315 01:00:22.382532    70 NebulaStore.cpp:329] Space 2, part 93 has been added, asLearner 0
+I20220315 01:00:22.382936    70 TransactionManager.cpp:181] space=2, part=84 added
+I20220315 01:00:22.383246    70 NebulaStore.cpp:329] Space 2, part 84 has been added, asLearner 0
+I20220315 01:00:22.383622    70 TransactionManager.cpp:181] space=2, part=15 added
+I20220315 01:00:22.383862    70 NebulaStore.cpp:329] Space 2, part 15 has been added, asLearner 0
+I20220315 01:00:22.384253    70 TransactionManager.cpp:181] space=2, part=81 added
+I20220315 01:00:22.384497    70 NebulaStore.cpp:329] Space 2, part 81 has been added, asLearner 0
+I20220315 01:00:22.384912    70 TransactionManager.cpp:181] space=2, part=12 added
+I20220315 01:00:22.385191    70 NebulaStore.cpp:329] Space 2, part 12 has been added, asLearner 0
+I20220315 01:00:22.385583    70 TransactionManager.cpp:181] space=2, part=78 added
+I20220315 01:00:22.385845    70 NebulaStore.cpp:329] Space 2, part 78 has been added, asLearner 0
+I20220315 01:00:22.386204    70 TransactionManager.cpp:181] space=2, part=75 added
+I20220315 01:00:22.386453    70 NebulaStore.cpp:329] Space 2, part 75 has been added, asLearner 0
+I20220315 01:00:22.386821    70 TransactionManager.cpp:181] space=2, part=48 added
+I20220315 01:00:22.387077    70 NebulaStore.cpp:329] Space 2, part 48 has been added, asLearner 0
+I20220315 01:00:22.490849    73 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=24, term=1
+I20220315 01:00:22.490892    73 TransactionManager.cpp:212] scanPrimes(), space=2, part=24, term=1
+I20220315 01:00:22.490942    73 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 24, termId = 1
+I20220315 01:00:22.530429    72 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=48, term=1
+I20220315 01:00:22.530472    72 TransactionManager.cpp:212] scanPrimes(), space=2, part=48, term=1
+I20220315 01:00:22.530514    72 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 48, termId = 1
+I20220315 01:00:22.531258    71 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=75, term=1
+I20220315 01:00:22.531292    71 TransactionManager.cpp:212] scanPrimes(), space=2, part=75, term=1
+I20220315 01:00:22.531337    71 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 75, termId = 1
+I20220315 01:00:22.537928    74 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=84, term=1
+I20220315 01:00:22.537976    74 TransactionManager.cpp:212] scanPrimes(), space=2, part=84, term=1
+I20220315 01:00:22.538018    74 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 84, termId = 1
+I20220315 01:00:22.602046    73 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=57, term=1
+I20220315 01:00:22.602087    73 TransactionManager.cpp:212] scanPrimes(), space=2, part=57, term=1
+I20220315 01:00:22.602125    73 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 57, termId = 1
+I20220315 01:00:22.618333    72 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=87, term=1
+I20220315 01:00:22.618377    72 TransactionManager.cpp:212] scanPrimes(), space=2, part=87, term=1
+I20220315 01:00:22.618417    72 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 87, termId = 1
+I20220315 01:00:22.633520    71 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=96, term=1
+I20220315 01:00:22.633558    71 TransactionManager.cpp:212] scanPrimes(), space=2, part=96, term=1
+I20220315 01:00:22.633605    71 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 96, termId = 1
+I20220315 01:00:22.638020    74 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=63, term=1
+I20220315 01:00:22.638056    74 TransactionManager.cpp:212] scanPrimes(), space=2, part=63, term=1
+I20220315 01:00:22.638095    74 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 63, termId = 1
+I20220315 01:00:22.674108    73 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=6, term=1
+I20220315 01:00:22.674147    73 TransactionManager.cpp:212] scanPrimes(), space=2, part=6, term=1
+I20220315 01:00:22.674201    73 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 6, termId = 1
+I20220315 01:00:22.685441    72 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=39, term=1
+I20220315 01:00:22.685482    72 TransactionManager.cpp:212] scanPrimes(), space=2, part=39, term=1
+I20220315 01:00:22.685523    72 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 39, termId = 1
+I20220315 01:00:22.689595    71 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=12, term=1
+I20220315 01:00:22.689638    71 TransactionManager.cpp:212] scanPrimes(), space=2, part=12, term=1
+I20220315 01:00:22.689679    71 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 12, termId = 1
+I20220315 01:00:22.762125    74 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=42, term=1
+I20220315 01:00:22.762158    74 TransactionManager.cpp:212] scanPrimes(), space=2, part=42, term=1
+I20220315 01:00:22.762193    74 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 42, termId = 1
+I20220315 01:00:22.765781    73 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=45, term=1
+I20220315 01:00:22.765820    73 TransactionManager.cpp:212] scanPrimes(), space=2, part=45, term=1
+I20220315 01:00:22.765856    73 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 45, termId = 1
+I20220315 01:00:22.778332    72 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=54, term=1
+I20220315 01:00:22.778375    72 TransactionManager.cpp:212] scanPrimes(), space=2, part=54, term=1
+I20220315 01:00:22.778412    72 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 54, termId = 1
+I20220315 01:00:22.798547    71 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=15, term=1
+I20220315 01:00:22.798583    71 TransactionManager.cpp:212] scanPrimes(), space=2, part=15, term=1
+I20220315 01:00:22.798617    71 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 15, termId = 1
+I20220315 01:00:22.802980    74 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=93, term=1
+I20220315 01:00:22.803031    74 TransactionManager.cpp:212] scanPrimes(), space=2, part=93, term=1
+I20220315 01:00:22.803083    74 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 93, termId = 1
+I20220315 01:00:22.883168    73 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=72, term=1
+I20220315 01:00:22.883211    73 TransactionManager.cpp:212] scanPrimes(), space=2, part=72, term=1
+I20220315 01:00:22.883255    73 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 72, termId = 1
+I20220315 01:00:22.887615    72 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=66, term=1
+I20220315 01:00:22.887651    72 TransactionManager.cpp:212] scanPrimes(), space=2, part=66, term=1
+I20220315 01:00:22.887737    72 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 66, termId = 1
+I20220315 01:00:22.935094    71 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=18, term=1
+I20220315 01:00:22.935195    71 TransactionManager.cpp:212] scanPrimes(), space=2, part=18, term=1
+I20220315 01:00:22.935250    71 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 18, termId = 1
+I20220315 01:00:22.957425    74 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=99, term=1
+I20220315 01:00:22.957479    74 TransactionManager.cpp:212] scanPrimes(), space=2, part=99, term=1
+I20220315 01:00:22.957536    74 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 99, termId = 1
+I20220315 01:00:22.971616    73 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=36, term=1
+I20220315 01:00:22.971653    73 TransactionManager.cpp:212] scanPrimes(), space=2, part=36, term=1
+I20220315 01:00:22.971693    73 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 36, termId = 1
+I20220315 01:00:22.973031    72 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=81, term=1
+I20220315 01:00:22.973062    72 TransactionManager.cpp:212] scanPrimes(), space=2, part=81, term=1
+I20220315 01:00:22.973094    72 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 81, termId = 1
+I20220315 01:00:22.999398    71 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=69, term=1
+I20220315 01:00:22.999428    71 TransactionManager.cpp:212] scanPrimes(), space=2, part=69, term=1
+I20220315 01:00:22.999487    71 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 69, termId = 1
+I20220315 01:00:23.011844    74 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=21, term=1
+I20220315 01:00:23.011894    74 TransactionManager.cpp:212] scanPrimes(), space=2, part=21, term=1
+I20220315 01:00:23.011935    74 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 21, termId = 1
+I20220315 01:00:23.034974    73 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=3, term=1
+I20220315 01:00:23.035022    73 TransactionManager.cpp:212] scanPrimes(), space=2, part=3, term=1
+I20220315 01:00:23.035060    73 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 3, termId = 1
+I20220315 01:00:23.063966    74 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=30, term=1
+I20220315 01:00:23.064026    74 TransactionManager.cpp:212] scanPrimes(), space=2, part=30, term=1
+I20220315 01:00:23.064095    74 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 30, termId = 1
+I20220315 01:00:23.076505    73 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=9, term=1
+I20220315 01:00:23.076562    73 TransactionManager.cpp:212] scanPrimes(), space=2, part=9, term=1
+I20220315 01:00:23.076611    73 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 9, termId = 1
+I20220315 01:00:23.181735    72 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=27, term=1
+I20220315 01:00:23.181777    72 TransactionManager.cpp:212] scanPrimes(), space=2, part=27, term=1
+I20220315 01:00:23.181828    72 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 27, termId = 1
+I20220315 01:00:23.222124    71 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=60, term=1
+I20220315 01:00:23.222177    71 TransactionManager.cpp:212] scanPrimes(), space=2, part=60, term=1
+I20220315 01:00:23.222218    71 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 60, termId = 1
+I20220315 01:00:23.238293    74 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=78, term=1
+I20220315 01:00:23.238332    74 TransactionManager.cpp:212] scanPrimes(), space=2, part=78, term=1
+I20220315 01:00:23.238374    74 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 78, termId = 1
+I20220315 01:00:23.302835    72 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=90, term=1
+I20220315 01:00:23.302875    72 TransactionManager.cpp:212] scanPrimes(), space=2, part=90, term=1
+I20220315 01:00:23.302915    72 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 90, termId = 1
+I20220315 01:00:23.322935    71 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=33, term=1
+I20220315 01:00:23.322978    71 TransactionManager.cpp:212] scanPrimes(), space=2, part=33, term=1
+I20220315 01:00:23.323019    71 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 33, termId = 1
+I20220315 01:00:23.351416    74 TransactionManager.cpp:206] leader get do scanPrimes space=2, part=51, term=1
+I20220315 01:00:23.351452    74 TransactionManager.cpp:212] scanPrimes(), space=2, part=51, term=1
+I20220315 01:00:23.351488    74 TransactionManager.cpp:256] set curr term spaceId = 2, partId = 51, termId = 1
+I20220315 01:00:32.423141    70 MetaClient.cpp:3046] Load leader of "storaged0":9779 in 2 space
+I20220315 01:00:32.423413    70 MetaClient.cpp:3046] Load leader of "storaged1":9779 in 2 space
+I20220315 01:00:32.423627    70 MetaClient.cpp:3046] Load leader of "storaged2":9779 in 2 space
+I20220315 01:00:32.423683    70 MetaClient.cpp:3052] Load leader ok
+I20220315 01:00:42.459463    70 MetaClient.cpp:3046] Load leader of "storaged0":9779 in 2 space
+I20220315 01:00:42.459690    70 MetaClient.cpp:3046] Load leader of "storaged1":9779 in 2 space
+I20220315 01:00:42.459910    70 MetaClient.cpp:3046] Load leader of "storaged2":9779 in 2 space
+I20220315 01:00:42.459957    70 MetaClient.cpp:3052] Load leader ok
+I20220315 01:11:53.309068    70 MetaClient.cpp:3046] Load leader of "storaged0":9779 in 2 space
+I20220315 01:11:53.309298    70 MetaClient.cpp:3046] Load leader of "storaged1":9779 in 2 space
+I20220315 01:11:53.309497    70 MetaClient.cpp:3046] Load leader of "storaged2":9779 in 2 space
+I20220315 01:11:53.309577    70 MetaClient.cpp:3052] Load leader ok
+I20220315 01:12:33.388204    70 MetaClient.cpp:3046] Load leader of "storaged0":9779 in 2 space
+I20220315 01:12:33.388486    70 MetaClient.cpp:3046] Load leader of "storaged1":9779 in 2 space
+I20220315 01:12:33.388759    70 MetaClient.cpp:3046] Load leader of "storaged2":9779 in 2 space
+I20220315 01:12:33.388847    70 MetaClient.cpp:3052] Load leader ok
+E20220315 07:39:55.339066    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+I20220315 07:40:05.349751    64 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "192.168.80.3":9559
+E20220315 07:40:05.350908    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+I20220315 07:48:04.181725    43 SlowOpTracker.h:31] [Port: 9780, Space: 2, Part: 93] total time:2000ms, Total commit: 1
+I20220315 07:59:28.254609    37 SlowOpTracker.h:31] [Port: 9780, Space: 2, Part: 51] total time:2000ms, Write WAL, total 2
+I20220315 08:12:22.333734    45 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 90] total time:2000ms, Total commit: 1
+I20220315 08:18:06.610522    35 SlowOpTracker.h:31] [Port: 9780, Space: 2, Part: 51] total time:258ms, Write WAL, total 2
+I20220315 08:18:06.610736    35 SlowOpTracker.h:31] [Port: 9780, Space: 2, Part: 51] total time:179ms, Total send logs: 2
+I20220315 08:18:06.610968    35 SlowOpTracker.h:31] [Port: 9780, Space: 2, Part: 51] total time:270ms, Total commit: 1
+I20220315 08:18:06.705582    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 30] total time:280ms, Write WAL, total 2
+I20220315 08:18:06.705822    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 30] total time:178ms, Total send logs: 2
+I20220315 08:18:06.706066    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 30] total time:271ms, Total commit: 1
+I20220315 08:18:07.050176    35 SlowOpTracker.h:31] [Port: 9780, Space: 2, Part: 75] total time:102ms, Write WAL, total 2
+I20220315 08:18:07.050307    35 SlowOpTracker.h:31] [Port: 9780, Space: 2, Part: 75] total time:144ms, Total commit: 1
+I20220315 08:18:07.092258    35 SlowOpTracker.h:31] [Port: 9780, Space: 2, Part: 3] total time:109ms, Total commit: 1
+I20220315 08:18:07.186601    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 51] total time:284ms, Write WAL, total 2
+I20220315 08:18:07.186767    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 51] total time:141ms, Total send logs: 2
+I20220315 08:18:07.186947    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 51] total time:220ms, Total commit: 1
+I20220315 08:18:07.390074    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 15] total time:213ms, Write WAL, total 2
+I20220315 08:18:07.390223    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 15] total time:113ms, Total send logs: 2
+I20220315 08:18:07.390383    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 15] total time:208ms, Total commit: 1
+I20220315 08:18:07.483147    35 SlowOpTracker.h:31] [Port: 9780, Space: 2, Part: 30] total time:278ms, Write WAL, total 2
+I20220315 08:18:07.483363    35 SlowOpTracker.h:31] [Port: 9780, Space: 2, Part: 30] total time:163ms, Total send logs: 2
+I20220315 08:18:07.483598    35 SlowOpTracker.h:31] [Port: 9780, Space: 2, Part: 30] total time:319ms, Total commit: 1
+I20220315 08:18:07.622197    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 42] total time:267ms, Write WAL, total 2
+I20220315 08:18:07.622421    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 42] total time:167ms, Total send logs: 2
+I20220315 08:18:07.622670    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 42] total time:323ms, Total commit: 1
+I20220315 08:18:07.870910    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 75] total time:268ms, Write WAL, total 2
+I20220315 08:18:07.871160    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 75] total time:172ms, Total send logs: 2
+I20220315 08:18:07.871412    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 75] total time:342ms, Total commit: 1
+I20220315 08:18:07.914965    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 69] total time:289ms, Write WAL, total 2
+I20220315 08:18:07.915225    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 69] total time:248ms, Total send logs: 2
+I20220315 08:18:07.915482    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 69] total time:336ms, Total commit: 1
+I20220315 08:18:08.062443    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 54] total time:268ms, Write WAL, total 2
+I20220315 08:18:08.062673    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 54] total time:174ms, Total send logs: 2
+I20220315 08:18:08.062937    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 54] total time:326ms, Total commit: 1
+I20220315 08:18:08.162674    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 33] total time:280ms, Write WAL, total 2
+I20220315 08:18:08.163048    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 33] total time:184ms, Total send logs: 2
+I20220315 08:18:08.163367    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 33] total time:321ms, Total commit: 1
+I20220315 08:18:08.206383    35 SlowOpTracker.h:31] [Port: 9780, Space: 2, Part: 93] total time:269ms, Write WAL, total 2
+I20220315 08:18:08.206609    35 SlowOpTracker.h:31] [Port: 9780, Space: 2, Part: 93] total time:168ms, Total send logs: 2
+I20220315 08:18:08.206874    35 SlowOpTracker.h:31] [Port: 9780, Space: 2, Part: 93] total time:348ms, Total commit: 1
+E20220315 08:18:08.224182    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+I20220315 08:18:08.402204    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 66] total time:139ms, Write WAL, total 2
+I20220315 08:18:08.402611    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 66] total time:211ms, Total commit: 1
+I20220315 08:18:08.443424    35 SlowOpTracker.h:31] [Port: 9780, Space: 2, Part: 81] total time:142ms, Write WAL, total 2
+I20220315 08:18:08.443714    35 SlowOpTracker.h:31] [Port: 9780, Space: 2, Part: 81] total time:135ms, Total commit: 1
+I20220315 08:18:08.517622    35 SlowOpTracker.h:31] [Port: 9780, Space: 2, Part: 90] total time:138ms, Write WAL, total 2
+I20220315 08:18:08.517972    35 SlowOpTracker.h:31] [Port: 9780, Space: 2, Part: 90] total time:164ms, Total commit: 1
+I20220315 08:18:08.583050    35 SlowOpTracker.h:31] [Port: 9780, Space: 2, Part: 12] total time:140ms, Write WAL, total 2
+I20220315 08:18:08.583393    35 SlowOpTracker.h:31] [Port: 9780, Space: 2, Part: 12] total time:179ms, Total commit: 1
+I20220315 08:18:08.759083    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 87] total time:135ms, Write WAL, total 2
+I20220315 08:18:08.759443    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 87] total time:196ms, Total commit: 1
+I20220315 08:18:08.805600    35 SlowOpTracker.h:31] [Port: 9780, Space: 2, Part: 60] total time:128ms, Write WAL, total 2
+I20220315 08:18:08.805941    35 SlowOpTracker.h:31] [Port: 9780, Space: 2, Part: 60] total time:179ms, Total commit: 1
+I20220315 08:18:08.830345    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 63] total time:114ms, Write WAL, total 2
+I20220315 08:18:08.830696    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 63] total time:186ms, Total commit: 1
+I20220315 08:18:08.833964    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 57] total time:130ms, Write WAL, total 2
+I20220315 08:18:08.834319    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 57] total time:187ms, Total commit: 1
+I20220315 08:18:08.961880    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 45] total time:135ms, Total commit: 1
+I20220315 08:18:09.694496    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 48] total time:168ms, Write WAL, total 2
+I20220315 08:18:09.694900    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 48] total time:192ms, Total commit: 1
+I20220315 08:18:09.699723    35 SlowOpTracker.h:31] [Port: 9780, Space: 2, Part: 87] total time:147ms, Write WAL, total 2
+I20220315 08:18:09.700014    35 SlowOpTracker.h:31] [Port: 9780, Space: 2, Part: 87] total time:127ms, Total commit: 1
+I20220315 08:18:09.718816    35 SlowOpTracker.h:31] [Port: 9780, Space: 2, Part: 96] total time:135ms, Write WAL, total 2
+I20220315 08:18:09.719205    35 SlowOpTracker.h:31] [Port: 9780, Space: 2, Part: 96] total time:248ms, Total commit: 1
+I20220315 08:18:09.755093    35 SlowOpTracker.h:31] [Port: 9780, Space: 2, Part: 72] total time:128ms, Write WAL, total 2
+I20220315 08:18:09.755314    35 SlowOpTracker.h:31] [Port: 9780, Space: 2, Part: 72] total time:105ms, Total commit: 1
+I20220315 08:18:09.883615    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 99] total time:131ms, Write WAL, total 2
+I20220315 08:18:09.883908    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 99] total time:143ms, Total commit: 1
+I20220315 08:18:09.933609    35 SlowOpTracker.h:31] [Port: 9780, Space: 2, Part: 24] total time:132ms, Write WAL, total 2
+I20220315 08:18:09.933892    35 SlowOpTracker.h:31] [Port: 9780, Space: 2, Part: 24] total time:131ms, Total commit: 1
+I20220315 08:18:13.079061    45 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 60] total time:134ms, Total commit: 1
+I20220315 08:18:18.239073    63 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "192.168.80.3":9559
+E20220315 08:18:18.242483    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+I20220315 08:18:19.439244    45 SlowOpTracker.h:31] [Port: 9780, Space: 2, Part: 36] total time:1086ms, Total commit: 1
+E20220315 08:18:28.251996    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:18:38.263674    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+I20220315 08:18:48.274900    66 ThriftClientManager-inl.h:67] resolve "metad1":9559 as "192.168.80.4":9559
+E20220315 08:18:48.277786    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+I20220315 08:18:58.290560    55 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "192.168.80.3":9559
+I20220315 08:19:08.306830    58 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "192.168.80.3":9559
+E20220315 08:19:08.309510    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+I20220315 08:19:18.318856    59 ThriftClientManager-inl.h:67] resolve "metad1":9559 as "192.168.80.4":9559
+I20220315 08:19:28.334782    60 ThriftClientManager-inl.h:67] resolve "metad1":9559 as "192.168.80.4":9559
+E20220315 08:19:28.337683    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+I20220315 08:19:31.857890    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 90] total time:188ms, Total commit: 1
+I20220315 08:19:38.346858    65 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "192.168.80.3":9559
+I20220315 08:19:48.362864    49 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "192.168.80.3":9559
+E20220315 08:19:48.365799    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+I20220315 08:19:58.376152    57 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "192.168.80.3":9559
+E20220315 08:19:58.378705    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+I20220315 08:20:08.388821    56 ThriftClientManager-inl.h:67] resolve "metad1":9559 as "192.168.80.4":9559
+I20220315 08:20:18.402786    57 ThriftClientManager-inl.h:67] resolve "metad1":9559 as "192.168.80.4":9559
+E20220315 08:20:18.405262    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+I20220315 08:20:23.007102    35 SlowOpTracker.h:31] [Port: 9780, Space: 1, Part: 99] total time:122ms, Total commit: 1
+I20220315 08:20:28.414999    58 ThriftClientManager-inl.h:67] resolve "metad1":9559 as "192.168.80.4":9559
+E20220315 08:20:28.418062    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+I20220315 08:20:38.426939    59 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "192.168.80.3":9559
+I20220315 08:20:48.442616    60 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "192.168.80.3":9559
+E20220315 08:20:48.444176    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:20:58.455776    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+I20220315 08:21:18.474715    69 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "192.168.80.3":9559
+E20220315 08:21:28.488741    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:21:38.499078    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+I20220315 08:21:48.510857    64 ThriftClientManager-inl.h:67] resolve "metad1":9559 as "192.168.80.4":9559
+I20220315 08:21:58.526487    67 ThriftClientManager-inl.h:67] resolve "metad1":9559 as "192.168.80.4":9559
+E20220315 08:22:08.539271    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:22:28.563326    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:22:38.575884    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+I20220315 08:22:48.586941    62 ThriftClientManager-inl.h:67] resolve "metad1":9559 as "192.168.80.4":9559
+E20220315 08:22:48.589324    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:22:58.598683    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+I20220315 08:23:08.606593    68 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "192.168.80.3":9559
+E20220315 08:23:08.608824    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:23:18.619379    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:23:28.631927    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:23:48.654075    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:23:58.666509    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:24:18.691155    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:24:28.703058    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+I20220315 08:24:38.713765    65 ThriftClientManager-inl.h:67] resolve "metad1":9559 as "192.168.80.4":9559
+E20220315 08:24:38.714722    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+I20220315 08:24:48.722999    66 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "192.168.80.3":9559
+E20220315 08:24:48.723651    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:24:58.735083    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:25:08.747298    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:25:18.758955    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:25:28.771323    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:25:38.778853    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+I20220315 08:25:48.796238    70 MetaClient.cpp:3046] Load leader of "storaged0":9779 in 2 space
+I20220315 08:25:48.796308    70 MetaClient.cpp:3046] Load leader of "storaged1":9779 in 2 space
+I20220315 08:25:48.796368    70 MetaClient.cpp:3046] Load leader of "storaged2":9779 in 2 space
+I20220315 08:25:48.796380    70 MetaClient.cpp:3052] Load leader ok
+E20220315 08:25:58.803159    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+I20220315 08:26:08.818341    61 ThriftClientManager-inl.h:67] resolve "metad1":9559 as "192.168.80.4":9559
+E20220315 08:26:08.825870    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:26:18.836313    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:26:28.847194    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:26:48.870915    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:26:58.883008    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:27:08.894767    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:27:18.904495    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+I20220315 08:27:28.915469    67 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "192.168.80.3":9559
+E20220315 08:27:28.917183    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:27:38.926834    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:27:48.937762    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:28:08.962673    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:28:18.974251    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:28:28.985445    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:28:38.997172    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:28:49.006789    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:28:59.014011    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:29:09.023880    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:29:19.026921    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:29:49.066486    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:29:59.077831    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:30:09.087312    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:30:19.099330    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:30:59.146586    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:31:09.154621    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:31:19.163573    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:31:49.195425    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:31:59.206430    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:32:09.217912    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:32:59.274309    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:33:09.281597    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:33:29.299795    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:33:59.335103    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:34:29.370508    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:34:39.379236    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:34:49.391055    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:34:59.403288    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:35:09.414783    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:35:19.419467    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:35:29.430331    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:35:39.431437    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:35:59.454145    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:36:09.462674    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:36:19.474450    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:36:29.486533    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+I20220315 08:36:39.495712    62 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "192.168.80.3":9559
+E20220315 08:36:39.497684    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:36:49.507007    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:36:59.518996    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:37:09.530810    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:37:19.541057    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:37:29.553292    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:37:39.565258    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:37:49.575824    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:38:19.612772    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+I20220315 08:38:29.622386    69 ThriftClientManager-inl.h:67] resolve "metad1":9559 as "192.168.80.4":9559
+E20220315 08:38:29.623613    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:38:59.658946    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:39:09.670082    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:39:19.681499    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:39:29.692481    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:39:39.704510    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:40:09.738145    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+I20220315 08:40:19.748728    68 ThriftClientManager-inl.h:67] resolve "metad1":9559 as "192.168.80.4":9559
+E20220315 08:40:29.758648    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:40:39.766511    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:40:49.775876    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:40:59.787407    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:41:09.797835    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:41:19.807826    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:41:39.832410    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:41:49.841675    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:42:19.873831    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+I20220315 08:42:29.883289    61 ThriftClientManager-inl.h:67] resolve "metad2":9559 as "192.168.80.3":9559
+E20220315 08:42:29.885576    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:42:39.895316    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:42:49.906535    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:42:59.918048    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:43:09.926365    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:43:59.977825    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:44:09.986774    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:44:40.017894    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:44:50.025970    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:45:30.070752    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:45:40.079046    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:46:20.126855    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:46:30.137208    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:46:40.148118    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:47:10.182909    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:47:20.194823    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:47:30.205696    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:47:50.229683    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:48:00.241446    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:48:10.252355    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:48:20.262950    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:48:30.274528    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:48:40.282979    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:48:50.291930    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:49:00.301789    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:49:10.312769    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:49:20.326848    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:49:30.338826    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:49:40.350438    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:49:50.358500    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:50:10.374014    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:50:30.399251    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:50:40.411119    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:50:50.423009    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:51:00.433688    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:51:10.445430    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:51:20.455615    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:51:30.467379    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:51:50.491875    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:52:10.516685    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:52:20.527125    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:52:30.539077    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:52:40.550851    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:52:50.559839    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:53:00.567631    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:53:10.579110    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:53:20.590677    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:53:30.602739    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:53:40.613668    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:53:50.624120    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:54:00.634493    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:54:20.656816    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:54:30.666859    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:54:40.678843    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:54:50.690507    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:55:00.698498    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:55:20.718195    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:55:30.726029    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:55:40.736328    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:56:10.773236    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:56:20.784085    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:56:30.794417    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:56:40.804196    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:56:50.814922    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:57:00.826877    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:57:10.835101    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:57:20.846413    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:57:40.868754    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:57:50.878940    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:58:30.926904    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:58:40.939258    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:58:50.951155    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:59:00.963201    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:59:10.974660    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:59:20.983878    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:59:30.995184    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:59:41.006968    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 08:59:51.019235    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:00:01.031247    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:00:11.042680    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:00:21.051569    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:00:31.062908    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:01:31.135684    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:01:41.147202    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:01:51.159605    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:02:31.205926    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:02:41.217658    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:04:11.323222    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:04:21.335588    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:04:31.346622    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:04:41.356091    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:04:51.366988    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:07:11.089001    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:07:21.098238    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:07:31.105535    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:08:11.149718    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:09:21.233806    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:09:31.242790    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:09:41.254541    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:09:51.261454    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:10:01.274616    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:10:31.302686    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:11:41.378830    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:11:51.390681    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:19:32.377635    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:19:42.386284    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:19:52.397893    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:20:02.409940    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:20:12.421957    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:20:22.433928    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:21:12.496006    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:21:32.517395    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:22:42.597625    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:23:02.617936    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:23:12.622102    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:23:22.634296    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:23:32.646217    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:23:42.657651    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:24:02.678396    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:24:22.701848    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:24:32.713235    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:24:42.722906    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+I20220315 09:24:52.733565    63 ThriftClientManager-inl.h:67] resolve "metad1":9559 as "192.168.80.4":9559
+E20220315 09:24:52.735330    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:25:02.746697    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:25:12.757539    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:25:22.764730    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:25:42.785910    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:25:52.797000    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:26:02.808600    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:26:12.819547    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:26:22.830016    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:26:32.840929    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:26:42.848733    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:26:52.858203    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:27:02.869895    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:27:32.903018    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:27:42.913707    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:28:22.961750    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:28:32.968878    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:28:42.303092    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:29:32.363236    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:30:22.418540    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:30:32.427814    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:30:42.438221    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:30:52.446285    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:31:02.456713    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:32:12.531136    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:32:22.539996    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:33:12.600437    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:33:22.610774    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:33:42.633800    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:35:22.750892    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:35:32.759316    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:39:12.563453    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:39:22.571847    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:39:32.582938    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:39:43.357594    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:39:53.369956    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:40:03.381522    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:40:43.425194    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:40:53.436259    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:41:03.447523    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:41:13.457713    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:41:23.469815    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:41:33.481923    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:47:03.885393    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:47:13.897719    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:47:23.909596    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:47:33.920202    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:47:43.935045    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:48:44.008697    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:48:54.017674    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:49:04.029361    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:49:14.041218    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:49:24.053359    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:49:34.065696    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:49:44.077636    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:53:54.385493    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:54:04.397106    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:54:14.407323    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:54:24.418279    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:54:34.428905    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:54:44.437157    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:54:54.449342    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:55:04.460852    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:55:14.472584    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:55:24.485718    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:55:34.496958    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:55:44.507803    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:55:54.518510    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:56:04.528437    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:56:14.537273    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:56:24.546975    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:56:34.556320    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:56:54.577251    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:57:04.585405    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:57:14.592092    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:57:24.602013    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:57:34.613198    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:57:44.621001    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 09:57:54.632982    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 10:01:14.868434    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
+E20220315 10:01:24.879061    70 MetaClient.cpp:169] Heartbeat failed, status:Machine not existed!
