@@ -1,0 +1,6 @@
+pika
+fastapi
+uvicorn
+nebula3-python
+elasticsearch
+networkx

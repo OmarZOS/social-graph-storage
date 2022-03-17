@@ -1,0 +1,32 @@
+version: '3.5'
+services:
+  storage-server:
+    build: server/
+    image: omarzos/social-storage-server:latest
+    container_name: phoros-social-storage-server
+    environment:
+      - ELASTICSEARCH_CLUSTER_NAME=elasticsearch-cluster
+      - ELASTICSEARCH_CLUSTER_HOSTS=elasticsearch-node1,elasticsearch-node2
+      - ELASTICSEARCH_HOST=elasticsearch
+      - ELASTICSEARCH_PORT=9200
+      - RABBIT_MQ_USER=omar
+      - RABBIT_MQ_PASSWORD=omar
+      - RABBIT_MQ_HOST=rabbitmq-broker
+      - RABBIT_MQ_PORT=5671
+      - RABBIT_MQ_EXCHG=storage
+      - NEBULA_HOST=graphd
+      - NEBULA_PORT=9669
+      - NEBULA_USER=root
+      - NEBULA_PASS=nebula
+    networks:
+      - phoros_net
+    # volumes:
+    #   - 'storage-server:/code'
+networks:
+  phoros_net:
+    external: true
+# volumes:
+#   storage-server:
+#     driver: local
+
+

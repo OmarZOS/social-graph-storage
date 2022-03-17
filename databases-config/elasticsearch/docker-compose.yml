@@ -1,7 +1,7 @@
 version: '3.5'
 services:
   elasticsearch-node1:
-    image: bitnami/elasticsearch:latest
+    image: bitnami/elasticsearch
     container_name: elasticsearch-node1
     environment:
       - ELASTICSEARCH_CLUSTER_NAME=elasticsearch-cluster
@@ -10,7 +10,7 @@ services:
     networks:
       - elastic_net
   elasticsearch-node2:
-    image: bitnami/elasticsearch:latest
+    image: bitnami/elasticsearch
     container_name: elasticsearch-node2
     environment:
       - ELASTICSEARCH_CLUSTER_NAME=elasticsearch-cluster
@@ -19,8 +19,9 @@ services:
     networks:
     - elastic_net
   elasticsearch:
-    image: docker.io/bitnami/elasticsearch:7
+    image: bitnami/elasticsearch
     container_name: elasticsearch
+    hostname: elasticsearch
     ports:
       - '9200:9200'
       - '9300:9300'

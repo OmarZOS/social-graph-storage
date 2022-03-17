@@ -6,15 +6,15 @@
 
 #### Databases:
 
-##### Nebula Database:
+##### - Nebula Database:
 
     cd databases-config/nebula/ & docker-compose up -d
 
-##### Elasticsearch engine:
+##### - Elasticsearch engine:
 
     cd ../databases-config/elasticsearch/ & docker-compose up -d
 
-#### social Storage server:
+#### Social Storage server:
 
     docker-compose up -d
 
@@ -23,25 +23,26 @@
  - [ ] Nebula graph database. ![](https://us-central1-progress-markdown.cloudfunctions.net/progress/70)
    - [x] Deployment.
    - [x] Wrapper files.
- - [ ] Elasticsearch engine. ![](https://us-central1-progress-markdown.cloudfunctions.net/progress/40)
+ - [x] Elasticsearch engine. ![](https://us-central1-progress-markdown.cloudfunctions.net/progress/80)
    - [x] Deployment.
-   - [ ] Wrapper files.
- - [ ] Current code consistency. ![](https://us-central1-progress-markdown.cloudfunctions.net/progress/20)
-   - [x] Rabbitmq listening to data providers.
+   - [x] Wrapper files.
+ - [ ] Current code consistency. ![](https://us-central1-progress-markdown.cloudfunctions.net/progress/69)
+   - [x] Listening to data providers.
+     - Rabbitmq.
    - [ ] Serving data.
      - [x] Basic server functionality.
-     - [ ] Mediation with databases.
      - [ ] Advanced query handling.
-
-
-   - [ ] Semantic index. (for more details, visit my repository [semantic-social-indexer](https://github.com/OmarZOS/semantic-social-indexer)) ![](https://us-central1-progress-markdown.cloudfunctions.net/progress/10)
-     - [x] Twitter.
-     - [ ] Facebook.
-     - [ ] Youtube.
- - [ ] Containerisation ![](https://us-central1-progress-markdown.cloudfunctions.net/progress/90)
-   - [x] Smaller fingerprint.
-   - [ ] Automation of deployment.
+   - [x] Data formats. 
+      - NetworkX json graph.
+ - [x] Indexing. ![](https://us-central1-progress-markdown.cloudfunctions.net/progress/70)
+   - [x] Simple indexing.
+   - [ ] Semantic indexing. (for more details, visit my repository [semantic-social-grapher](https://github.com/OmarZOS/semantic-social-grapher)) 
+     -  Twitter.
+ - [x] Containerisation ![](https://us-central1-progress-markdown.cloudfunctions.net/progress/90)
+   - [x] Light footprint.
+   - [x] Automation of deployment.
 
 ## Dependencies:
-   - This component is supposed to listen to canals through a broker (rabbitmq in this case), therefore, it is imperative to deploy a broker or else the listening process will crash 
+   - This component is supposed to listen to canals through a broker (rabbitmq in this case), therefore, it is imperative to deploy a broker or else the listening process will crash. 
+   - Keep in mind that every node/edge **must** have a field "other":(user|tweet|post...) like the following examples: *"other":"user"* , "other":"friends_with". 
 
