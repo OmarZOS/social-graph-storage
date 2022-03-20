@@ -1,4 +1,4 @@
-# import subprocess
+import subprocess
 
 from fastapi import FastAPI
 from listenerImplementation import rabbitMQ_Implementation
@@ -6,8 +6,8 @@ from constants import *
 
 app = FastAPI();
 
-# listener = subprocess.run(["python3","listenerImplementation.py"])
-listener = rabbitMQ_Implementation()
+listener = subprocess.run(["python3","listenerImplementation.py"])
+# listener = rabbitMQ_Implementation()
 
 @app.get("/")
 async def root():

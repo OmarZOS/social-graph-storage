@@ -13,6 +13,7 @@ from constants import *
 class rabbitMQ_Implementation(listeningService):
     
     def __init__(self,exchange=RMQ_EXCHG,hostName=RMQ_HOST,user=RMQ_USER,password=RMQ_PASSWORD):#,routeName,user,password,portNumber,hostName="localhost",exchange="data"
+        
         creds = pika.PlainCredentials(username=user,password=password)
         connection = pika.BlockingConnection(pika.ConnectionParameters(host=hostName,credentials=creds,port=RMQ_PORT))#port=portNumber, ,  credentials= self.credentials
         channel = connection.channel()
@@ -32,7 +33,8 @@ class rabbitMQ_Implementation(listeningService):
     def receiveData(self,api_name,ch,method,properties,body):
         # print(json.loads(body.decode()))
         data = json.loads(body.decode())
-        data["roadmap"],next_destination = self.resolve_service_ids(data["roadmap"])
+        if("roadmap" in data):
+            data["roadmap"],next_destination = self.resolve_service_ids(data["roadmap"])
         
         # for now, just hardcode it.. doch es meint nichts
         next_destination = {"type":"rabbitmq"}
@@ -46,4 +48,4 @@ class rabbitMQ_Implementation(listeningService):
 
         
 if __name__=="__main__":
-    listener = rabbitMQ_Implementation("storage")
+    listener = rabbitMQ_Implementation()

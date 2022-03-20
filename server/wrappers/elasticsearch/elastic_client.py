@@ -6,10 +6,9 @@ from elasticsearch import Elasticsearch
 
 class elastic_wrapper:
     
-    # es = Elasticsearch(f"http://{ELASTIC_HOST}:{ELASTIC_PORT}")
     def __init__(self): # name...,node/edge
 
-        self.es = Elasticsearch([{'host': ELASTIC_HOST, 'port': ELASTIC_PORT}])
+        self.es = Elasticsearch(f"{ELASTIC_SCHEME}://{ELASTIC_HOST}:{ELASTIC_PORT}")
         # self.index_name = index_name
 
     def _insert(self,index,type,id,body):
@@ -24,12 +23,13 @@ class elastic_wrapper:
     def insert_node(self,social_network_name,tag,node):
         
         for (prop,val) in node[1].items():
-            self.es.index(index=f"{social_network_name}_node_{tag}",doc_type=f"{prop}",id=node[0],body=val)
+            print(val)
+            self.es.index(index=(f"{social_network_name}_node_{tag}_{prop}").lower(),id=node[0],body=val)
     
     def insert_edge(self,social_network_name,tag,edge):
         
         for (prop,val) in edge[2].items():
-            self.es.index(index=f"{social_network_name}_edge_{tag}",doc_type=f"{prop}",id=f"{edge[0]},{edge[1]}",body=val)
+            self.es.index(index=(f"{social_network_name}_edge_{tag}_{prop}").lower(),id=f"{edge[0]},{edge[1]}",body=val)
         
         
 

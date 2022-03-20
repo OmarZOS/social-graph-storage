@@ -34,7 +34,7 @@
      - [ ] Advanced query handling.
    - [x] Data formats. 
       - NetworkX json graph.
- - [x] Indexing. ![](https://us-central1-progress-markdown.cloudfunctions.net/progress/70)
+ - [x] Indexing. ![](https://us-central1-progress-markdown.cloudfunctions.net/progress/75)
    - [x] Simple indexing.
    - [ ] Semantic indexing. (for more details, visit my repository [semantic-social-grapher](https://github.com/OmarZOS/semantic-social-grapher)) 
      -  Twitter.
