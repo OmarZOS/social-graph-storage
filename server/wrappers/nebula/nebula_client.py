@@ -1,13 +1,6 @@
-from ast import Lambda
-import os
 from nebula3.gclient.net import ConnectionPool
 from nebula3.Config import Config
-
-GRAPH_STORAGE_HOST = str(os.getenv("NEBULA_HOST"))
-GRAPH_STORAGE_PORT = int(os.getenv("NEBULA_PORT"))
-GRAPH_STORAGE_USER = str(os.getenv("NEBULA_USER"))
-GRAPH_STORAGE_PASS = str(os.getenv("NEBULA_PASS"))
-
+from constants import *
 
 class nebula_client(object):
     
@@ -25,15 +18,19 @@ class nebula_client(object):
 
     session = None
     
-    _get_space_name = lambda x : f"{x}_graph"
+    _get_space_name = lambda self,x : f"{x}_graph"
 
     def __init__(self,space):
         # get session from the pool
         self.session = self.connection_pool.get_session(GRAPH_STORAGE_USER, GRAPH_STORAGE_PASS)
         
         # select space
-        self.session.execute(f"CREATE SPACE IF NOT EXISTS {space} ( vid_type = INT64 )")
-        self.session.execute(f"USE {self._get_space_name(space)}")
+        self.session.execute(f"CREATE SPACE IF NOT EXISTS {self._get_space_name(space)} ( vid_type = INT64 )")
+        try:
+            self.session.execute(f"USE {self._get_space_name(space)}")
+        except :
+            print(f"Can't connect to space: {space} ")
+            
 
     def __del__(self):
         # close the pool
@@ -78,7 +75,13 @@ class nebula_client(object):
         return result
     
     def raw(self,query):
-        result = self.session.execute(query)
+        try:
+            result = self.session.execute(query)
+        except :
+            result = "Error while executing the query"
         return result
+    
+    # def get_data(args):
+    #     return 
 
     

@@ -4,19 +4,25 @@ services:
     build: server/
     image: omarzos/social-storage-server:latest
     container_name: phoros-social-storage-server
+    hostname: phoros-social-storage
     env_file:
       - env/elastic.env
       - env/nebula.env
       - env/rabbitmq.env
+    ports:
+      - 4587:8000
+    command: uvicorn --host phoros-social-storage server:app --reload
     networks:
       - phoros_net
-    # volumes:
-    #   - 'storage-server:/code'
+      - phoros_public_net
+    # for dev reasons..
+    volumes:
+      - ./server/:/code
 networks:
   phoros_net:
     external: true
-# volumes:
-#   storage-server:
-#     driver: local
+  # a workaround to make things work, not for production
+  phoros_public_net:
+    external: true
 
 

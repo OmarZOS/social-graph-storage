@@ -1,12 +1,14 @@
-from grapher.grapher import grapher # should have been installed using pip in a better scenario..
+# these functions are responsible for handling insertion queries
 
+
+from grapher.grapher import grapher # should have been installed using pip in a better scenario..
 
 # from wrappers.nebula.nebula_client import nebula_client
 from wrappers.elasticsearch.elastic_client import elastic_wrapper
 
-def handle_data(api,data,destination):
+def handle_data(api,data,roadmap):
     
-    # pruning insignificant attributes..
+    # pruning insignificant attributes.. (a legacy issue)
     if("road_map" in data):
         road_map = data.pop("road_map")
     
@@ -20,8 +22,8 @@ def handle_data(api,data,destination):
     for item in graph.nodes(data=True):
         
         # this was a temp entry, it has no place in the schema
-        if("other" in item[1]):
-            tag = item[1].pop("other")
+        if("node_type" in item[1]):
+            tag = item[1].pop("node_type")
         else:
             tag = "unbekannt"
         # nebula.insert_node(api,tag,item)
@@ -30,10 +32,11 @@ def handle_data(api,data,destination):
     for item in graph.edges(data=True):
         
         # this was a temp entry, it has no place in the schema
-        if("other" in item[2]):
-            tag = item[2].pop("other")
+        if("edge_type" in item[2]):
+            tag = item[2].pop("edge_type")
         else:
             tag = "unbekannt"
         # nebula.insert_edge(api,tag,item)
         elastic.insert_edge(api,tag,item)
+    return "Insertion successful.";
     

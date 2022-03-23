@@ -1,6 +1,7 @@
-pika
-fastapi
-uvicorn
-nebula3-python
-elasticsearch
-networkx
+pika==1.2.0
+fastapi==0.75.0
+uvicorn==0.17.6
+nebula3-python==3.0.0
+elasticsearch==8.1.1
+networkx==2.7.1
+httpx==0.22.0

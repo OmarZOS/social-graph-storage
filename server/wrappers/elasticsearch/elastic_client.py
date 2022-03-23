@@ -31,7 +31,11 @@ class elastic_wrapper:
         for (prop,val) in edge[2].items():
             self.es.index(index=(f"{social_network_name}_edge_{tag}_{prop}").lower(),id=f"{edge[0]},{edge[1]}",body=val)
         
-        
+    def search(api,content):
+        pass
+    
+    def get(args):
+        pass
 
 
 

@@ -6,4 +6,4 @@ COPY . /code
 
 RUN pip3 install -r requirements.txt
 
-CMD ["uvicorn","server:app","--reload"]
+CMD ["uvicorn","--host","phoros-social-storage","server:app","--reload"]
