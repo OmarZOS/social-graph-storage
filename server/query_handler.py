@@ -4,9 +4,9 @@
 from wrappers.REST.http_client import send_data
 from wrappers.nebula.nebula_client import nebula_client
 from wrappers.nebula.ngqlBuilder import *
-from wrappers.elasticsearch.elastic_client import elastic_wrapper
+# from wrappers.elasticsearch.elastic_client import elastic_wrapper
 
-elastic = elastic_wrapper()
+# elastic = elastic_wrapper()
 
 nebulas = {}
 

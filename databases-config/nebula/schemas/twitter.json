@@ -1,68 +1,257 @@
 {
-    "user": [
-        { "id": "INT64" },
-        { "id_str": "INT64" },
-        { "name": "INT64" },
-        { "screen_name": "INT64" },
-        { "location": "INT64" },
-        { "url": "INT64" },
-        { "description": "INT64" },
-        { "verified": "INT64" },
-        { "followers_count": "INT64" },
-        { "friends_count": "INT64" },
-        { "listed_count": "INT64" },
-        { "favourites_count": "INT64" },
-        { "statuses_count": "INT64" },
-        { "created_at": "INT64" },
-        { "utc_offset": "INT64" },
-        { "time_zone": "INT64" },
-        { "geo_enabled": "INT64" },
-        { "lang": "INT64" },
-        { "contributors_enabled": "INT64" },
-        { "is_translator": "INT64" },
-        { "default_profile": "INT64" },
-        { "following": "INT64" },
-        { "follow_request_sent": "INT64" },
-        { "notifications": "INT64" }
-    ],
-    "coordinates": [
-        { "coordinated": "INT64" },
-        { "type": "INT64" }
+    "nodes": [{
+            "id": 1,
+             
+            "user": [
+                {  "id": "INT64" },
+                {  "id_str": "string" },
+                {   "name":"string" },
+                {  "screen_name": "string" },
+                {  "location": "string" },
+                {  "url": "string" },
+                {  "description": "string" },
+                {  "verified": "string" },
+                {  "followers_count": "INT64" },
+                {  "friends_count": "INT64" },
+                {  "listed_count": "INT64" },
+                {  "favourites_count": "INT64" },
+                {  "statuses_count": "INT64" },
+                {  "created_at": "string" },
+                {  "utc_offset": "string" },
+                {  "time_zone": "string" },
+                {  "geo_enabled": "string" },
+                {  "lang": "string" },
+                {  "contributors_enabled": "string" },
+                {  "is_translator": "string" },
+                {  "default_profile": "string" },
+                {  "following": "string" },
+                {  "follow_request_sent": "string" },
+                {  "notifications": "boolean" }
+            ]
+        },
+        {
+            "id": 2,
+            
+             "coordinates": [
+                {  "coordinated": "string" },
+                { "type":"string" } 
+            ]
+        },
+        {
+            "id": 3,
+             
+            "place": [{
+                     "bounding_box"
+                    : "string"
+                },
+                {
+                     "country"
+                    : "string"
+                },
+                {
+                     "country_code"
+                    : "string"
+                },
+                {
+                     "full_name"
+                    : "string"
+                },
+                {
+                     "id"
+                    : "INT64"
+                },
+                {
+                     "name"
+                    : "string"
+                },
+                {
+                     "place_type"
+                    : "string"
+                },
+                {
+                     "url"
+                    : "string"
+                }
 
+            ]
+        },
+        {
+            "id": 4,
+             
+            "entities": [{
+                     "hashtags"
+                    : "string"
+                },
+                {
+                     "urls"
+                    : "string"
+                },
+                {
+                     "user_mentions"
+                    : "string"
+                },
+                {
+                     "symbols"
+                    : "string"
+                },
+                {
+                     "media"
+                    : "string"
+                }
+
+            ]
+        },
+        {
+            "id": 5,
+             
+            "media": [{
+                     "id"
+                    : "string"
+                },
+                {
+                     "indices"
+                    : "string"
+                },
+                {
+                     "expanded_url"
+                    : "string"
+                },
+                {
+                     "type"
+                    : "string"
+                }
+
+            ]
+        },
+        {
+            "id": 6,
+             
+            "geo": [{
+                 "type"
+                : "string"
+            }, {
+                 "coordinates"
+                : "string"
+            }]
+        },
+        {
+            "id": 7,
+             
+            "tweet": [{
+                     "created_at"
+                    : "string"
+                },
+                {
+                     "id"
+                    : "string"
+                },
+                {
+                     "id_str"
+                    : "string"
+                },
+                {
+                     "full_name"
+                    : "string"
+                },
+                {
+                     "entities"
+                    : "string"
+                }
+
+            ]
+        },
+        {
+            "id": 8,
+             
+            "retweet": [{
+                     "created_at"
+                    : "string"
+                },
+                {
+                     "id"
+                    : "string"
+                },
+                {
+                     "id_str"
+                    : "string"
+                },
+                {
+                    "full_name"
+                    : "string"
+                },
+                {
+                     "entities"
+                    : "string"
+                }
+
+            ]
+        }
     ],
-    "place": [
-        { "attributes": "INT64" },
-        { "bounding_box": "INT64" },
-        { "country": "INT64" },
-        { "country_code": "INT64" },
-        { "full_name": "INT64" },
-        { "id": "INT64" },
-        { "name": "INT64" },
-        { "place_type": "INT64" },
-        { "url": "INT64" }
-    ],
-    "entities": [
-        { "hashtags": "INT64" },
-        { "urls": "INT64" },
-        { "user_mentions": "INT64" },
-        { "symbols": "INT64" },
-        { "media": "INT64" }
-    ],
-    "media": [
-        { "id": "INT64" },
-        { "indices": "INT64" },
-        { "expanded_url": "INT64" },
-        { "type": "INT64" }
-    ],
-    "geo": [
-        { "type": "INT64" },
-        { "coordinates": "INT64" }
-    ],
-    "tweet": [
-        { "created_at": "INT64" },
-        { "id": "INT64" },
-        { "id_str": "INT64" },
-        { "full_text": "INT64" },
-        { "entities": "INT64" }
+    "links": [
+
+        {
+            "source": 1,
+            "target": 2,
+            "publish":[]
+        },
+        {
+            "source": 7,
+            "target": 4,
+            "contains":[] 
+        },
+        {
+            "source": 7,
+            "target": 5,
+            "contains":[] 
+        },
+        {
+            "source": 8,
+            "target": 4,
+            "contains":[] 
+        },
+        {
+            "source": 8,
+            "target": 5,
+            "contains":[]
+        },
+        {
+            "source": 1,
+            "target": 6,
+            "localised":[] 
+        },
+
+        {
+            "source": 2,
+            "target": 3,
+            "publish":[]
+        },
+        {
+            "source": 2,
+            "target": 7,
+            "publish":[] 
+        },
+
+      
+        {
+            "source": 8,
+            "target": 3,
+            "localised":[]
+        },
+        {
+            "source": 4,
+            "target": 5,
+            "contains":[]
+        },
+        {
+            "source": 1,
+            "target": 1,
+            "follow":[]
+        },
+        {
+            "source": 8,
+            "target": 7,
+            "retweet_of":[]
+        }
     ]
+
 }

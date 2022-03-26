@@ -356,4 +356,5 @@ networks:
   nebula-net:
     driver: bridge
   phoros_net:
-    external: true
+    name: phoros_net
+    driver: bridge

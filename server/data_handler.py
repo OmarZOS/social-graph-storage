@@ -3,8 +3,8 @@
 
 from grapher.grapher import grapher # should have been installed using pip in a better scenario..
 
-# from wrappers.nebula.nebula_client import nebula_client
-from wrappers.elasticsearch.elastic_client import elastic_wrapper
+from wrappers.nebula.nebula_client import nebula_client
+# from wrappers.elasticsearch.elastic_client import elastic_wrapper
 
 def handle_data(api,data,roadmap):
     
@@ -14,10 +14,10 @@ def handle_data(api,data,roadmap):
     
     graph = grapher.get_graph(api,data)
     
-    # nebula = nebula_client(api)
+    nebula = nebula_client(api)
 
     # noch nicht
-    elastic = elastic_wrapper()
+    # elastic = elastic_wrapper()
 
     for item in graph.nodes(data=True):
         
@@ -26,8 +26,8 @@ def handle_data(api,data,roadmap):
             tag = item[1].pop("node_type")
         else:
             tag = "unbekannt"
-        # nebula.insert_node(api,tag,item)
-        elastic.insert_node(api,tag,item)
+        nebula.insert_node(api,tag,item)
+        # elastic.insert_node(api,tag,item)
         
     for item in graph.edges(data=True):
         
@@ -36,7 +36,7 @@ def handle_data(api,data,roadmap):
             tag = item[2].pop("edge_type")
         else:
             tag = "unbekannt"
-        # nebula.insert_edge(api,tag,item)
-        elastic.insert_edge(api,tag,item)
+        nebula.insert_edge(api,tag,item)
+        # elastic.insert_edge(api,tag,item)
     return "Insertion successful.";
     
