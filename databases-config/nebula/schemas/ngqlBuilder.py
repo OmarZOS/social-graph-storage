@@ -10,12 +10,12 @@ def read_json_file(filename):
 # with open("databases-config/nebula/schemas/twitter.json") as f :
 #     schema = json.load(f)
 
-net = "facebook"
+net = "linkedIn"
 
 graph = read_json_file(f"databases-config/nebula/schemas/{net}.json")
 
-print(f"CREATE SPACE IF NOT EXISTS {net}_graph")
-print(f"USE SPACE {net}_graph;")
+print(f"CREATE SPACE IF NOT EXISTS {net}_graph ( vid_type = INT64 );")
+print(f"USE {net}_graph;")
 
 for node in graph.nodes(data=True):
     # print(node)
