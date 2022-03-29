@@ -4,3 +4,9 @@ __pycache__
 data
 logs
 charts
+server.crt
+server.key
+server.csr
+plugins
+import
+conf

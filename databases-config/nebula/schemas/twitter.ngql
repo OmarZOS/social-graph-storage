@@ -1,6 +1,6 @@
 CREATE SPACE IF NOT EXISTS twitter_graph( vid_type = INT64 );
 USE SPACE twitter_graph;
-CREATE TAG IF NOT EXISTS user(id INT64,id_str string,name string,screen_name string,location string,url string,description string,verified string,followers_count INT64,friends_count INT64,listed_count INT64,favourites_count INT64,statuses_count INT64,created_at string,utc_offset string,time_zone string,geo_enabled string,lang string,contributors_enabled string,is_translator string,default_profile string,following string,follow_request_sent string,notifications boolean);
+CREATE TAG IF NOT EXISTS user(id INT64,id_str string,name string,screen_name string,location string,url string,description string,verified string,followers_count INT64,friends_count INT64,listed_count INT64,favourites_count INT64,statuses_count INT64,created_at string,utc_offset string,time_zone string,geo_enabled string,lang string,contributors_enabled string,is_translator string,default_profile string,following string,follow_request_sent string,notifications bool);
 CREATE TAG IF NOT EXISTS coordinates(coordinated string,type string);
 CREATE TAG IF NOT EXISTS place(bounding_box string,country string,country_code string,full_name string,id INT64,name string,place_type string,url string);
 CREATE TAG IF NOT EXISTS entities(hashtags string,urls string,user_mentions string,symbols string,media string);

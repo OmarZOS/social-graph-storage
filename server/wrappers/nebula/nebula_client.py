@@ -2,25 +2,27 @@ from nebula3.gclient.net import ConnectionPool
 from nebula3.Config import Config
 from constants import *
 
-class nebula_client(object):
+class nebula_client:
     
     # define a config
     config = Config()
     config.max_connection_pool_size = 10
     
-    # init connection pool
-    connection_pool = ConnectionPool()
-    
-    # # if the given servers are ok, return true, else return false
-    # ok = connection_pool.init([(GRAPH_STORAGE_HOST, GRAPH_STORAGE_PORT)], config)
-    
-    connection_pool.init([(GRAPH_STORAGE_HOST,GRAPH_STORAGE_PORT)], config)
 
     session = None
     
     _get_space_name = lambda self,x : f"{x}_graph"
 
     def __init__(self,space):
+        
+        # init connection pool
+        connection_pool = ConnectionPool()
+        
+        # # if the given servers are ok, return true, else return false
+        # ok = connection_pool.init([(GRAPH_STORAGE_HOST, GRAPH_STORAGE_PORT)], config)
+        
+        connection_pool.init([(GRAPH_STORAGE_HOST,GRAPH_STORAGE_PORT)], config)
+        
         # get session from the pool
         self.session = self.connection_pool.get_session(GRAPH_STORAGE_USER, GRAPH_STORAGE_PASS)
         
@@ -29,7 +31,7 @@ class nebula_client(object):
         try:
             self.session.execute(f"USE {self._get_space_name(space)}")
         except :
-            print(f"Can't connect to space: {space} ")
+            print(f"Can't connect to space: {self._get_space_name(space)} ")
             
 
     def __del__(self):
@@ -43,7 +45,7 @@ class nebula_client(object):
         values=f"VALUES {node[0]}:("
         for (prop,val) in node[1].items():
             labels+=f"{prop},"
-            if(int(val)):
+            if(isinstance(val,int)):
                 values+=f"{val},"
             else:
                 values+=f"\"{val}\","

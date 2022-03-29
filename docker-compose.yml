@@ -9,6 +9,7 @@ services:
       - env/elastic.env
       - env/nebula.env
       - env/rabbitmq.env
+      - env/neo4j.env
     ports:
       - 4587:8000
     command: uvicorn --host phoros-social-storage server:app --reload

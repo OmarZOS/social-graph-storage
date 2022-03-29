@@ -1,5 +1,6 @@
-import subprocess
+from multiprocessing import Process
 from fastapi import FastAPI
+from listenerImplementation import rabbitMQ_Implementation as Listener
 import data_handler as d_handler
 import query_handler as q_handler
 from models import *
@@ -9,7 +10,11 @@ from constants import *
 
 app = FastAPI()
 
-# listener = subprocess.run(["python3","listenerImplementation.py"])
+# on the other side, rabbitmq is mainly here to handle the system's internal data
+listener = Process(target=Listener, args=(RMQ_EXCHG,))
+# # then I'll tell you all about it when I see you again..
+listener.start()
+
 
 # ------------- Routes -----------------------------------------------
 

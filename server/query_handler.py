@@ -10,6 +10,12 @@ from wrappers.nebula.ngqlBuilder import *
 
 nebulas = {}
 
+def get_graph_connection(api):
+    if(not api in nebulas):
+        nebulas[api] = nebula_client(api)
+    return nebulas[api]    
+    
+
 def handle_search(api,content):
     # TODO: handle advanced search too..
     result = elastic.search(api,content)
@@ -17,9 +23,7 @@ def handle_search(api,content):
     return result
     
 async def handle_query(api,content,roadmap):
-    if(not api in nebulas):
-        nebulas[api] = nebula_client(api)
-    nebula = nebulas[api]
+    nebula = get_graph_connection(api)
     ngql_query = ngql_from_struct_filter(api,content)
     result = nebula.raw(ngql_query)
     if(roadmap): # if it has a certain path to follow

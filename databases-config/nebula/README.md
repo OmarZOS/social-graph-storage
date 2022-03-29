@@ -35,3 +35,7 @@ In order to run multiple queries, use the following instructions:
 
 ##### Making a script:
     I have made a simple script *ngqlBuilder.py* to generate Node creation instructions (TAGS in nebula), the instrucitons are printed to the standard output. I have redirected them using pipes. 
+
+#### Querying:
+    MATCH (n:user)
+    RETURN n;

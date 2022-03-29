@@ -9,7 +9,6 @@ import pika
 from pika.exchange_type import ExchangeType
 from constants import *
 
-
 class rabbitMQ_Implementation(listeningService):
     
     def __init__(self,exchange=RMQ_EXCHG,hostName=RMQ_HOST,user=RMQ_USER,password=RMQ_PASSWORD):#,routeName,user,password,portNumber,hostName="localhost",exchange="data"
