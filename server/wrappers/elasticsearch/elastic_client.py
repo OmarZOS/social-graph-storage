@@ -1,10 +1,13 @@
 from constants import *
 
 from elasticsearch import Elasticsearch
+from locator import singleton
+from wrappers.StorageService import StorageService
 
 
 
-class elastic_wrapper:
+@singleton
+class elastic_wrapper(StorageService):
     
     def __init__(self): # name...,node/edge
 
@@ -30,7 +33,9 @@ class elastic_wrapper:
         
         for (prop,val) in edge[2].items():
             self.es.index(index=(f"{social_network_name}_edge_{tag}_{prop}").lower(),id=f"{edge[0]},{edge[1]}",body=val)
-        
+
+
+
     def search(api,content):
         pass
     

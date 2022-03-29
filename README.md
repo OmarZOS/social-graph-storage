@@ -25,6 +25,11 @@
    - [x] Wrapper files.
      - [x] Insertion.
      - [ ] Retrieval.
+ - [x] Neo4J graph database. ![](https://us-central1-progress-markdown.cloudfunctions.net/progress/90)
+   - [x] Deployment.
+   - [x] Wrapper files.
+     - [x] Insertion.
+     - [ ] Retrieval.
  - [x] Elasticsearch engine. ![](https://us-central1-progress-markdown.cloudfunctions.net/progress/80)
    - [x] Deployment.
    - [x] Wrapper files.

@@ -15,7 +15,6 @@ listener = Process(target=Listener, args=(RMQ_EXCHG,))
 # # then I'll tell you all about it when I see you again..
 listener.start()
 
-
 # ------------- Routes -----------------------------------------------
 
 @app.get("/")
