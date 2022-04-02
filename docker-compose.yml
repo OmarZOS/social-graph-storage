@@ -11,8 +11,7 @@ services:
       - env/rabbitmq.env
       - env/neo4j.env
     ports:
-      - 4587:8000
-    command: uvicorn --host phoros-social-storage server:app --reload
+      - ${STORAGE_PORT_EXT}:8000
     networks:
       - phoros_net
       - phoros_public_net
@@ -22,8 +21,8 @@ services:
 networks:
   phoros_net:
     external: true
-  # a workaround to make things work, not for production
   phoros_public_net:
-    external: true
+    name: phoros_public_net
+    driver: bridge
 
 

@@ -1,5 +1,5 @@
 from multiprocessing import Process
-from fastapi import FastAPI
+from fastapi import FastAPI, WebSocket
 from listenerImplementation import rabbitMQ_Implementation as Listener
 import data_handler as d_handler
 import query_handler as q_handler
@@ -29,9 +29,23 @@ def storage():
 async def storage_submit_query(query: Query):
     return await q_handler.handle_query(query.api,query.content,query.roadmap)
 
+# using websockets for better real time responses
+# @app.websocket("/ws")
 @app.post("/storage/query/search")
-async def storage_submit_query(query: Query):
-    return await q_handler.handle_search(query.api,query.content)
+def submit_search_query(query: Query): #
+    # await websocket.accept()
+    # while True:
+    #     try: 
+            # Wait for any message from the client
+            # data = await websocket.receive_text()
+            # Send message to the client
+    data = q_handler.handle_search(query.api,query.content)
+    return {"content":data}
+            # resp = {'content': data}#await q_handler.handle_search(data,data)
+            # await websocket.send_json(resp)
+        # except Exception as e:
+        #     print('error:', e)
+        #     break
 
 @app.post("/storage/insert/graph")
 async def storage_insert_graph(query: Query):

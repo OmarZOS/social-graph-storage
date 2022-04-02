@@ -1,0 +1,14 @@
+CREATE SPACE IF NOT EXISTS facebook_graph
+USE SPACE facebook_graph;
+CREATE TAG IF NOT EXISTS user(id INT64,type string,screen_name string,location string,url string,description string,verified bool,Follower_count INT64,Friend_count INT64,Contact Info string,Basic Info string);
+CREATE TAG IF NOT EXISTS post(post_id INT64,post_string string,reaction_count INT64,fetched_time string,comments string,image bool,video bool,images_description string,video_watches INT64,likes INT64,shares INT64);
+CREATE TAG IF NOT EXISTS comment(comment_id string,comment_string string,comment_reaction_count string,comment_time string,replies string,comment_image bool);
+CREATE TAG IF NOT EXISTS comment_reply(comment_id string,comment_string string,reaction_count string,comment_time string,replies string,comment_image bool);
+CREATE TAG IF NOT EXISTS group(group_id string,type string,description string,members INT64);
+CREATE EDGE IF NOT EXISTS publish();
+CREATE EDGE IF NOT EXISTS commenter();
+CREATE EDGE IF NOT EXISTS reply();
+CREATE EDGE IF NOT EXISTS member();
+CREATE EDGE IF NOT EXISTS comment();
+CREATE EDGE IF NOT EXISTS publish_group();
+CREATE EDGE IF NOT EXISTS reply_to_comment();

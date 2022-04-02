@@ -1,0 +1,111 @@
+{
+    "nodes": [{
+            "id": 1,
+            "user": [
+                {  "id": "INT64" },
+                {  "type": "string" },
+                {  "screen_name": "string" },
+                {  "location": "string" },
+                {  "url": "string" },
+                {  "description": "string" },
+                {  "verified": "bool" },
+                {  "Follower_count": "INT64" },
+                {  "Friend_count": "INT64" },
+                {  "Contact Info": "string" },
+                {  "Basic Info": "string" } 
+             ]
+        },
+        {
+            "id": 2,
+            "post": [
+                {  "post_id": "INT64" },
+                {  "post_string": "string" },
+                {  "reaction_count": "INT64" },
+                {  "fetched_time": "string" },
+                {  "comments": "string" },
+                {  "image": "bool" },
+                {  "video": "bool" },
+                {  "images_description": "string" },
+                {  "video_watches": "INT64" },
+                {  "likes": "INT64" },
+                {  "shares": "INT64" }
+            ]
+        },
+        {
+            "id": 3,
+            "comment": [
+                {  "comment_id": "string" },
+                {  "comment_string": "string" },
+                {  "comment_reaction_count": "string" },
+                {  "comment_time": "string" },
+                {  "replies": "string" },
+                {  "comment_image": "bool" }
+                 
+             ]
+        },
+        {
+            "id": 4,
+            "comment_reply":  [
+                {  "comment_id": "string" },
+                {  "comment_string": "string" },
+                {  "reaction_count": "string" },
+                {  "comment_time": "string" },
+                {  "replies": "string" },
+                {  "comment_image": "bool" }
+                 
+              ]
+        },
+        {
+            "id": 5,
+            "group":  [
+                {  "group_id": "string" },
+                { "type": "string" },
+                {  "description": "string" },
+                {  "members": "INT64" } 
+                
+              ]
+        }
+        
+    ],
+    "links": [
+
+        {
+            "source": 1,
+            "target": 2,
+            "publish": []
+        },
+        {
+            "source": 1,
+            "target": 3,
+            "commenter": []
+        },
+        {
+            "source": 1,
+            "target": 4,
+            "reply": []
+        },
+        {
+            "source": 1,
+            "target": 5,
+            "member": []
+        },
+        {
+            "source": 3,
+            "target": 2,
+            "comment": []
+        },
+        {
+            "source": 4,
+            "target": 3,
+            "reply_to_comment": []
+        },
+
+        {
+            "source": 2,
+            "target": 5,
+            "publish_group": []
+        }
+        
+    ]
+
+}

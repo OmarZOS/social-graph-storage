@@ -9,7 +9,7 @@ from wrappers.StorageService import StorageService
 @singleton
 class elastic_wrapper(StorageService):
     
-    def __init__(self): # name...,node/edge
+    def __init__(self,apiname="nichts"): # name...,node/edge
 
         self.es = Elasticsearch(f"{ELASTIC_SCHEME}://{ELASTIC_HOST}:{ELASTIC_PORT}")
         # self.index_name = index_name
@@ -25,22 +25,31 @@ class elastic_wrapper(StorageService):
     
     def insert_node(self,social_network_name,tag,node):
         
-        for (prop,val) in node[1].items():
-            print(val)
-            self.es.index(index=(f"{social_network_name}_node_{tag}_{prop}").lower(),id=node[0],body=val)
+        # for (prop,val) in node[1].items():
+        #     print(val)
+        self.es.index(index=(f"{social_network_name}_node_{tag}").lower(),id=node[0],body=node[1])
     
     def insert_edge(self,social_network_name,tag,edge):
         
-        for (prop,val) in edge[2].items():
-            self.es.index(index=(f"{social_network_name}_edge_{tag}_{prop}").lower(),id=f"{edge[0]},{edge[1]}",body=val)
+        # for (prop,val) in edge[2].items():
+            
+        self.es.index(index=(f"{social_network_name}_edge_{tag}").lower(),id=f"{edge[0]},{edge[1]}",body=edge[2])
 
-
-
-    def search(api,content):
-        pass
+    def search(self,api,query):
+        return self.es.search(query=query)["hits"]["hits"]
     
     def get(args):
         pass
 
+    def test_connection(self):
+        return self.es.ping()
+
+    # just avoid this
+    def queryData(self):
+        pass
+    
+    # avoid this too..
+    def saveData(self):
+        pass    
 
 

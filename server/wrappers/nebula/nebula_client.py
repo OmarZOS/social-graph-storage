@@ -11,9 +11,9 @@ class nebula_client(StorageService):
 
     _get_space_name = lambda self,x : f"{x}_graph"
     
+    config = Config()
     # define a config
     config.max_connection_pool_size = 10
-    config = Config()
     # init connection pool
     connection_pool = ConnectionPool()
 

@@ -6,6 +6,7 @@ class grapher(object):
     
     @staticmethod
     def get_graph(api,data):
+        # should be more sophisticated, but still..
         return grapher.from_networkx(data)
     
     @staticmethod
@@ -14,7 +15,8 @@ class grapher(object):
         # -------------Playground---------------
         
         # for item in graph.nodes(data=True):
-        #     print(item)
+        #     if "node_type" not in item[1]:
+        #         print(item)
         
         # # # for edge in graph.edges(data=True):
         # # #     tag=edge[2].pop("other")
@@ -44,6 +46,6 @@ class grapher(object):
     
     
 if __name__=="__main__":
-    with open("Graph.json") as f:
+    with open("graphe") as f:
         graph  = json.load(f)
     grapher.from_networkx(graph)

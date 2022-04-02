@@ -1,0 +1,12 @@
+CREATE SPACE IF NOT EXISTS linkedIn_graph( vid_type = INT64 )
+USE SPACE linkedIn_graph ;
+CREATE TAG IF NOT EXISTS user(id string,User Link string,UserName  string,Info string,About string,Current Company string,Education string,Education_Info string,Experience string,Interests string,Location INT64);
+CREATE TAG IF NOT EXISTS page(id string,name string,localisation string,description string,abonnee string);
+CREATE TAG IF NOT EXISTS post(id string,Post_Text string,Post_Likes string,Post_Comments string,Media_Links string,Media_Type string,Date_Posted string);
+CREATE TAG IF NOT EXISTS comment(id string,comment_Text string,nbre_likes INT64,nbre_replies INT64);
+CREATE EDGE IF NOT EXISTS follow();
+CREATE EDGE IF NOT EXISTS publish();
+CREATE EDGE IF NOT EXISTS comment();
+CREATE EDGE IF NOT EXISTS commenter();
+CREATE EDGE IF NOT EXISTS contains();
+CREATE EDGE IF NOT EXISTS post_comment();

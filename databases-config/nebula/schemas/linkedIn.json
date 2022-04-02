@@ -1,0 +1,88 @@
+{
+    "nodes": [{
+            "id": 1,
+            "user": [
+                {  "id": "string" },
+                {  "User Link": "string" },
+                {  "UserName ": "string" },
+                {  "Info": "string" },
+                {  "About": "string" },
+                {  "Current Company": "string" },
+                {  "Education": "string" },
+                {  "Education_Info": "string" },
+                {  "Experience": "string" },
+                {  "Interests": "string" },
+                {  "Location": "INT64" }
+                
+            ]
+        },
+        {
+            "id": 2,
+            "page": [
+                {  "id": "string" },
+                {  "name": "string" },
+                {  "localisation": "string" },
+                {  "description": "string" },
+                {  "abonnee": "string" }
+
+
+            ]
+        },
+        {
+            "id": 3,
+            "post":  [
+                {  "id": "string" },
+                {  "Post_Text": "string" },
+                {  "Post_Likes": "string" },
+                {  "Post_Comments": "string" },
+                {  "Media_Links": "string" },
+                {  "Media_Type": "string" },
+                {  "Date_Posted": "string" }
+                
+ 
+            ]
+        },
+        {
+            "id": 4,
+            "comment": [
+                {  "id": "string" },
+                {  "comment_Text": "string" },
+                {  "nbre_likes": "INT64" },
+                {  "nbre_replies": "INT64" }
+            ]
+        } 
+    ],
+    "links": [
+        {
+            "source": 1,
+            "target": 2,
+            "follow": []
+        },
+        {
+            "source": 1,
+            "target": 3,
+            "publish": []
+        },
+        {
+            "source": 1,
+            "target": 3,
+            "comment": []
+        },
+        {
+            "source": 2,
+            "target": 3,
+            "contains": []
+        },
+        {
+            "source": 2,
+            "target": 3,
+            "post_comment": []
+        },
+        {
+            "source": 1,
+            "target": 4,
+            "commenter": []
+        }
+    ]
+
+}

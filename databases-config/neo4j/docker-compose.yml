@@ -1,0 +1,27 @@
+version: '3'
+services:
+  neo4j:
+    image: neo4j:3.5
+    restart: unless-stopped
+    container_name: neo4j-graph
+    ports:
+      - 7474:7474
+      - 7687:7687
+    volumes:
+      - ./conf:/conf
+      - ./data:/data
+      - ./import:/import
+      - ./logs:/logs
+      - ./plugins:/plugins
+    environment:
+      # NEO4J_AUTH=user/password
+      - NEO4J_AUTH=neo4j/test
+      # Raise memory limits
+      - NEO4J_dbms_memory_pagecache_size=1G
+      - NEO4J_dbms.memory.heap.initial_size=1G
+      - NEO4J_dbms_memory_heap_max__size=1G
+    networks:
+      - phoros_net
+networks:
+  phoros_net:
+    external: true

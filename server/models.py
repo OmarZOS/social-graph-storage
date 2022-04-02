@@ -6,7 +6,7 @@ from typing import Optional
 
 class Query(BaseModel):
     api: str
-    content: dict
+    content: str
     roadmap: Optional[list] = None
 
 class GraphResponse(BaseModel):
